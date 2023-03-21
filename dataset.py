@@ -1,5 +1,5 @@
 from datasets import load_dataset
-from transformers import GPT2Tokenizer, PreTrainedTokenizerBase
+from transformers import AutoTokenizer, PreTrainedTokenizerBase
 import torch
 from typing import List, Dict, Any, Union, Optional
 from torch.nn import functional
@@ -18,7 +18,7 @@ def format_dataset(example, tokenizer):
     return example
 
 def get_taxonomy_dataset(filename):
-    tokenizer = GPT2Tokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
+    tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
 
     dataset = load_dataset('csv', data_files=filename, split='train')
     dataset = dataset.filter(lambda example: example['flag'])
@@ -27,6 +27,25 @@ def get_taxonomy_dataset(filename):
     datasets = dataset.train_test_split(test_size=0.1)
 
     return datasets
+
+def format_dataset_binary(example, tokenizer):
+    example['child'] = example['child'].replace('_', ' ')
+    example['parent'] = example['parent'].replace('_', ' ')
+    prompt = prompt_template.format(child=example['child'], parent=example['parent'])
+    example['input_ids'] = tokenizer.encode(prompt)
+
+    example['labels'] = 1 if example['flag'] else 0
+    return example
+
+def get_taxonomy_dataset_binary(filename):
+    tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
+
+    dataset = load_dataset('csv', data_files=filename, split='train')
+    dataset = dataset.map(lambda example: format_dataset_binary(example, tokenizer))
+    dataset = dataset.remove_columns(['child', 'parent', 'Unnamed: 0', 'group', 'flag'])
+    datasets = dataset.train_test_split(test_size=0.1)
+    return datasets
+
 
 class DataCollatorWithPaddingAndMasking:
 

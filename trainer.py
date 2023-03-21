@@ -1,4 +1,5 @@
 from torch import nn
+import torch
 from transformers import Trainer
 
 class TaxonomyTrainer(Trainer):
@@ -18,4 +19,15 @@ class TaxonomyTrainer(Trainer):
         loss = self.loss_fct(logits, labels)
 
         loss = (loss * masks).mean()
+        return (loss, outputs) if return_outputs else loss
+    
+class TaxonomyTrainerBinary(Trainer):
+    loss_fct = nn.BCEWithLogitsLoss()
+
+    def compute_loss(self, model, inputs, return_outputs=False):
+        # print(inputs)
+        outputs = model(input_ids=inputs['input_ids'])
+        logits = outputs.logits.squeeze()
+        labels = inputs['labels'].float()
+        loss = self.loss_fct(logits, labels)
         return (loss, outputs) if return_outputs else loss

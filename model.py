@@ -1,5 +1,5 @@
-from transformers import GPTNeoForCausalLM, GPT2Tokenizer
-
+from transformers import GPTNeoForCausalLM, GPTNeoForSequenceClassification, AutoTokenizer
+import torch
 
 def get_gpt_neo_model():
     model = GPTNeoForCausalLM.from_pretrained("EleutherAI/gpt-neo-1.3B")
@@ -9,6 +9,22 @@ def get_gpt_neo_model():
 
     # enable the last layer
     for param in model.lm_head.parameters():
+        param.requires_grad = True
+
+    return model
+
+def get_gpt_binary_model():
+    tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
+    padding_id = tokenizer.convert_tokens_to_ids([tokenizer.eos_token])[0]
+    model = GPTNeoForSequenceClassification.from_pretrained("EleutherAI/gpt-neo-1.3B", pad_token_id=padding_id)
+    
+    for param in model.parameters():
+        param.requires_grad = False
+    
+
+    # pop last layer 
+    model.score = torch.nn.Linear(2048, 1)
+    for param in model.score.parameters():
         param.requires_grad = True
 
     return model
