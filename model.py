@@ -13,6 +13,12 @@ def get_gpt_neo_model():
 
     return model
 
+
+class GPTNeoForSequenceClassificationBinary(GPTNeoForSequenceClassification):
+    def __init__(self, config):
+        super().__init__(config)
+        self.score = torch.nn.Linear(2048, 1, bias=True)
+
 def get_gpt_binary_model():
     tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
     padding_id = tokenizer.convert_tokens_to_ids([tokenizer.eos_token])[0]

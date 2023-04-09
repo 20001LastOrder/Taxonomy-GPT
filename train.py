@@ -42,9 +42,11 @@ def main(args):
         warmup_steps=500,                # number of warmup steps for learning rate scheduler
         weight_decay=0.01,               # strength of weight decay
         logging_dir='./logs',            # directory for storing logs
-        logging_steps=500,
+        logging_steps=1,
+        eval_steps=500,
         remove_unused_columns=False,
-        save_strategy='no'
+        save_strategy='epoch',
+        report_to='wandb'
     )
 
     trainer = Trainer(

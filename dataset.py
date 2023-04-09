@@ -37,14 +37,28 @@ def format_dataset_binary(example, tokenizer):
     example['labels'] = 1 if example['flag'] else 0
     return example
 
-def get_taxonomy_dataset_binary(filename):
+def get_taxonomy_dataset_binary(filename, entire_dataset=False):
     tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
 
     dataset = load_dataset('csv', data_files=filename, split='train')
     dataset = dataset.map(lambda example: format_dataset_binary(example, tokenizer))
-    dataset = dataset.remove_columns(['child', 'parent', 'Unnamed: 0', 'group', 'flag'])
-    datasets = dataset.train_test_split(test_size=0.1)
-    return datasets
+    dataset = dataset.remove_columns(['child', 'parent', 'Unnamed: 0', 'flag'])
+
+    # shuffle the train dataset but not the test dataset
+
+    if not entire_dataset:
+        train_dataset = dataset.filter(lambda example: example['group'] < 533).shuffle()
+        test_dataset = dataset.filter(lambda example: example['group'] >= 647)
+
+        # datasets = dataset.train_test_split(test_size=0.1)
+        return {
+            'train': train_dataset,
+            'test': test_dataset
+        }
+    else:
+        return {
+            'test': dataset
+        }
 
 
 class DataCollatorWithPaddingAndMasking:
