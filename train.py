@@ -1,13 +1,17 @@
 import argparse
 from transformers import TrainingArguments
 from transformers.data.data_collator import DataCollatorWithPadding
-
-from dataset import get_taxonomy_dataset, DataCollatorWithPaddingAndMasking, get_taxonomy_dataset_binary
-from model import get_gpt_neo_model, get_gpt_binary_model
+import pandas as pd
+from dataset import PairPredictionDataModule, get_taxonomy_dataset, DataCollatorWithPaddingAndMasking, get_taxonomy_dataset_binary
+from model import GPTSequenceClassifiationModule, get_gpt_neo_model, get_gpt_binary_model
 from trainer import TaxonomyTrainer, TaxonomyTrainerBinary
 from transformers import GPT2Tokenizer
 from torch.utils.data import DataLoader
 from datasets import load_metric
+import pytorch_lightning as pl
+from pytorch_lightning.callbacks import ModelCheckpoint
+import torch
+from pytorch_lightning.loggers.wandb import WandbLogger
 
 training_map = {
     get_gpt_neo_model: (TaxonomyTrainer, DataCollatorWithPaddingAndMasking, get_taxonomy_dataset),
@@ -60,10 +64,59 @@ def main(args):
 
     trainer.train()
     trainer.evaluate()
+    predictions = trainer.predict(datasets['test'])
+    df = pd.DataFrame(predictions.predictions)
+    df["True_Label"] = predictions.label_ids
+    df.to_csv('/notebooks/results/test.csv')
+
+def main_lightning(args):
+    if args.seed is not None:
+        pl.seed_everything(args.seed)
+    tokenizer = GPT2Tokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
+    tokenizer.pad_token = tokenizer.eos_token
+
+    dataset = PairPredictionDataModule(tokenizer, args)
+    model = GPTSequenceClassifiationModule(args)
+    wandb_logger = WandbLogger(project=args.project_name)
+    checkpoint_callback = ModelCheckpoint(monitor="val_loss", dirpath=args.run_dir, filename=args.model_name)
+
+    trainer = pl.Trainer(
+        fast_dev_run=args.dev,
+        accelerator='gpu',
+        devices=-1,
+        log_every_n_steps=1,
+        check_val_every_n_epoch=args.check_val_every_n_epoch,
+        max_epochs=args.max_epochs,
+        callbacks=[checkpoint_callback],
+        precision=args.precision,
+        reload_dataloaders_every_n_epochs=1,
+        logger=wandb_logger,
+    )
+
+    trainer.fit(model=model, datamodule=dataset)
+    trainer.test(ckpt_path='last',dataloaders = dataset.test_dataloader())
+
 
 if __name__ == '__main__':
+    torch.set_float32_matmul_precision('medium')
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default='/notebooks/taxonomy.csv')
+    parser.add_argument('--batch_size', type=int, default=16)
+    parser.add_argument('--num_workers', type=int, default=4)
+    parser.add_argument('--negative_ratio', type=float, default=1)
+    parser.add_argument('--lr', type=float, default=5e-5)
+    parser.add_argument('--seed', type=int, default=123435)
+    parser.add_argument('--precision', type=int, default=32)
+    parser.add_argument('--check_val_every_n_epoch', type=int, default=5)
+    parser.add_argument('--max_epochs', type=int, default=10)
+    parser.add_argument('--dev', action='store_true')
+    parser.add_argument('--resume_from_checkpoint', type=str, default=None)
+    parser.add_argument('--run_dir', type=str, default='/notebooks/runs')
+    parser.add_argument('--model_name', type=str, default='model')
+    parser.add_argument('--project_name', type=str, default='taxonomy')
+    parser.add_argument('--weight_decay', type=float, default=0.02)
+
 
     configs = parser.parse_args()
-    main(configs)
+    main_lightning(configs)
