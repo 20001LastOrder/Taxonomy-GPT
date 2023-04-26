@@ -1,0 +1,5 @@
+dataset: /notebooks/taxonomy.csv
+prompt_learning: False
+learnable_layers: 0
+lr: 0.0001
+max_epochs: 25

@@ -1,4 +1,3 @@
-import argparse
 from transformers import TrainingArguments
 from transformers.data.data_collator import DataCollatorWithPadding
 import pandas as pd
@@ -12,6 +11,7 @@ import pytorch_lightning as pl
 from pytorch_lightning.callbacks import ModelCheckpoint
 import torch
 from pytorch_lightning.loggers.wandb import WandbLogger
+from configs import get_config
 
 training_map = {
     get_gpt_neo_model: (TaxonomyTrainer, DataCollatorWithPaddingAndMasking, get_taxonomy_dataset),
@@ -100,23 +100,5 @@ def main_lightning(args):
 if __name__ == '__main__':
     torch.set_float32_matmul_precision('medium')
     
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, default='/notebooks/taxonomy.csv')
-    parser.add_argument('--batch_size', type=int, default=16)
-    parser.add_argument('--num_workers', type=int, default=4)
-    parser.add_argument('--negative_ratio', type=float, default=1)
-    parser.add_argument('--lr', type=float, default=5e-5)
-    parser.add_argument('--seed', type=int, default=123435)
-    parser.add_argument('--precision', type=int, default=32)
-    parser.add_argument('--check_val_every_n_epoch', type=int, default=5)
-    parser.add_argument('--max_epochs', type=int, default=10)
-    parser.add_argument('--dev', action='store_true')
-    parser.add_argument('--resume_from_checkpoint', type=str, default=None)
-    parser.add_argument('--run_dir', type=str, default='/notebooks/runs')
-    parser.add_argument('--model_name', type=str, default='model')
-    parser.add_argument('--project_name', type=str, default='taxonomy')
-    parser.add_argument('--weight_decay', type=float, default=0.02)
-
-
-    configs = parser.parse_args()
+    configs = get_config('config.yml')
     main_lightning(configs)

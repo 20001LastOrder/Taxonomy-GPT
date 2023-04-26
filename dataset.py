@@ -19,8 +19,9 @@ class PairPredictionDataModule(pl.LightningDataModule):
         super().__init__()
         self.save_hyperparameters(hparams)
         self.negative_ratio = hparams.negative_ratio
+        self.prompt_learning = hparams.prompt_learning
         self.tokenizer = tokenizer
-        self.dataset = get_taxonomy_dataset_binary(self.hparams.dataset)
+        self.dataset=  get_taxonomy_dataset_binary(self.hparams.dataset)
         self.train_group = self.group_pairs(self.dataset['train'])
         self.train_negatives = {}
         for key, value in self.train_group.items():
@@ -59,7 +60,17 @@ class PairPredictionDataModule(pl.LightningDataModule):
     
     def format_dataset(self, example):
         prompt = prompt_template.format(child=example['child'], parent=example['parent'])
-        example['input_ids'] = self.tokenizer.encode(prompt)
+
+        if self.prompt_learning:
+            # in prompt learning, we can give any token id as the embedding is learnt
+            prefix = [-i for i in range(10)]
+            middle = [-i + 10 for i in  range(5)]
+            postfix = [-i + 15 for i in range(10)]
+            parent_tokens = self.tokenizer.encode(example['parent'])
+            child_tokens = self.tokenizer.encode(example['child'])
+            example['input_ids'] = prefix + parent_tokens + middle + child_tokens + postfix
+        else:
+            example['input_ids'] = self.tokenizer.encode(prompt)
         return example
 
     def train_dataloader(self):
@@ -81,6 +92,7 @@ class PairPredictionDataModule(pl.LightningDataModule):
         )
 
     def val_dataloader(self):
+        
         dataset = self.dataset['test']
         dataset = dataset.map(self.format_dataset)
         dataset = dataset.remove_columns(['child', 'parent', 'group'])
@@ -94,7 +106,6 @@ class PairPredictionDataModule(pl.LightningDataModule):
 
     def test_dataloader(self):
         return self.val_dataloader()
-
 class DataCollatorWithPaddingAndMasking:
 
     def __init__(self, tokenizer: PreTrainedTokenizerBase, padding: Union[bool, str] = True, max_length: Optional[int] = None, pad_to_multiple_of: Optional[int] = None, return_tensors: str = "pt"):
@@ -155,15 +166,21 @@ def format_dataset_binary(example, tokenizer):
     example['labels'] = 1 if example['flag'] else 0
     return example
 
-def get_taxonomy_dataset_binary(filename, entire_dataset=False):
+def get_taxonomy_dataset_binary(filename, entire_dataset=False, remove_columns=False):
     tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
 
     dataset = load_dataset('csv', data_files=filename, split='train')
     dataset = dataset.map(lambda example: format_dataset_binary(example, tokenizer))
-    dataset = dataset.remove_columns(['Unnamed: 0', 'flag'])
+
+    if "Unnamed: 0" in list(dataset.features.keys()):
+        dataset = dataset.remove_columns(['Unnamed: 0', 'flag'])
+    else: 
+        dataset = dataset.remove_columns(['flag'])
+
+    if remove_columns:
+        dataset = dataset.remove_columns(['child', 'parent', 'group'])
 
     # shuffle the train dataset but not the test dataset
-
     if not entire_dataset:
         train_dataset = dataset.filter(lambda example: example['group'] < 533).shuffle()
         test_dataset = dataset.filter(lambda example: example['group'] >= 647)
