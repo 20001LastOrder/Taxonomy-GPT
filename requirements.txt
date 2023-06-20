@@ -1,0 +1,6 @@
+transformers==4.30.2
+wandb==0.15.4
+lightning==2.0.3
+datasets==2.13.0
+jsonargparse==4.21.2
+scikit-learn==1.2.2
