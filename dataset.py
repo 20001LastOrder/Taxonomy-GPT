@@ -165,7 +165,7 @@ def format_dataset_binary(example, tokenizer):
     prompt = prompt_template.format(child=example['child'], parent=example['parent'])
     example['input_ids'] = tokenizer.encode(prompt)
 
-    example['labels'] = 1 if example['flag'] else 0
+    example['labels'] = 1 # if example['flag'] else 0
     return example
 
 def get_taxonomy_dataset_binary(filename, entire_dataset=False, remove_columns=False):
@@ -174,10 +174,11 @@ def get_taxonomy_dataset_binary(filename, entire_dataset=False, remove_columns=F
     dataset = load_dataset('csv', data_files=filename, split='train')
     dataset = dataset.map(lambda example: format_dataset_binary(example, tokenizer))
 
-    if "Unnamed: 0" in list(dataset.features.keys()):
-        dataset = dataset.remove_columns(['Unnamed: 0', 'flag'])
-    else: 
-        dataset = dataset.remove_columns(['flag'])
+    # if "Unnamed: 0" in list(dataset.features.keys()):
+    #     dataset = dataset.remove_columns(['Unnamed: 0', 'flag'])
+    # else: 
+    if 'type' in list(dataset.features.keys()):
+        dataset = dataset.remove_columns(['type'])
 
     if remove_columns:
         dataset = dataset.remove_columns(['child', 'parent', 'group'])
