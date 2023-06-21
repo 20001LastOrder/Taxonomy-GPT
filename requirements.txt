@@ -4,3 +4,5 @@ lightning==2.0.3
 datasets==2.13.0
 jsonargparse==4.21.2
 scikit-learn==1.2.2
+networkx
+evaluate==0.4.0

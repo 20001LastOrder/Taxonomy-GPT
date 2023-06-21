@@ -6,7 +6,7 @@ from model import GPTSequenceClassifiationModule, get_gpt_neo_model, get_gpt_bin
 from trainer import TaxonomyTrainer, TaxonomyTrainerBinary
 from transformers import GPT2Tokenizer
 from torch.utils.data import DataLoader
-from datasets import load_metric
+from evaluate import load as load_metric
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import ModelCheckpoint
 import torch
@@ -98,7 +98,7 @@ def main_lightning(args):
 
 
 if __name__ == '__main__':
-    torch.set_float32_matmul_precision('medium')
+    # torch.set_float32_matmul_precision('medium')
     
     configs = get_config('config.yml')
     main_lightning(configs)

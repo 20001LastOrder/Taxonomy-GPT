@@ -106,6 +106,8 @@ class PairPredictionDataModule(pl.LightningDataModule):
 
     def test_dataloader(self):
         return self.val_dataloader()
+    
+
 class DataCollatorWithPaddingAndMasking:
 
     def __init__(self, tokenizer: PreTrainedTokenizerBase, padding: Union[bool, str] = True, max_length: Optional[int] = None, pad_to_multiple_of: Optional[int] = None, return_tensors: str = "pt"):
