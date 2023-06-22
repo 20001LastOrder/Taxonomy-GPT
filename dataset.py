@@ -22,10 +22,10 @@ class PairPredictionDataModule(pl.LightningDataModule):
         self.prompt_learning = hparams.prompt_learning
         self.tokenizer = tokenizer
         self.dataset=  get_taxonomy_dataset_binary(self.hparams.dataset)
-        self.train_group = self.group_pairs(self.dataset['train'])
-        self.train_negatives = {}
-        for key, value in self.train_group.items():
-            self.train_negatives[key] = self.create_negative_pairs(value)
+        # self.train_group = self.group_pairs(self.dataset['train'])
+        # self.train_negatives = {}
+        # for key, value in self.train_group.items():
+        #     self.train_negatives[key] = self.create_negative_pairs(value)
 
     def group_pairs(self, dataset):
         result = defaultdict(list)
@@ -52,11 +52,29 @@ class PairPredictionDataModule(pl.LightningDataModule):
             res.extend([{'labels': 0, 'parent': i, 'child': candidate} for candidate in candidates])
         return res
     
-    def negative_sampling(self, group, num_samples):
-        idx = range(len(self.train_negatives[group]))
+    def negative_sampling(self, negatives, group, num_samples):
+        idx = range(len(negatives[group]))
         # shuffle the index
         idx = np.random.choice(idx, num_samples, replace=True)
-        return [self.train_negatives[group][i] for i in idx]
+        return [negatives[group][i] for i in idx]
+
+    def create_negative_examples(self, dataset):
+        # get all groups
+        group = self.group_pairs(dataset)
+
+        negatives = {}
+        for key, value in group.items():
+            negatives[key] = self.create_negative_pairs(value)
+
+        negative_examples = []
+        for group, edges in group.items():
+            negative_examples.extend(
+                self.negative_sampling(negatives, group, len(edges) * self.negative_ratio)
+            )
+        
+        negative_examples = Dataset.from_list(negative_examples)
+        return negative_examples
+
     
     def format_dataset(self, example):
         prompt = prompt_template.format(child=example['child'], parent=example['parent'])
@@ -75,10 +93,8 @@ class PairPredictionDataModule(pl.LightningDataModule):
 
     def train_dataloader(self):
         dataset = self.dataset['train']
-        negative_examples = []
-        for group, edges in self.train_group.items():
-            negative_examples.extend(self.negative_sampling(group, len(edges) * self.negative_ratio))
-        negative_examples = Dataset.from_list(negative_examples)
+        negative_examples = self.create_negative_examples(dataset)
+
         dataset = concatenate_datasets([dataset, negative_examples])
         dataset = dataset.map(self.format_dataset)
         dataset = dataset.remove_columns(['child', 'parent', 'group'])
@@ -92,8 +108,10 @@ class PairPredictionDataModule(pl.LightningDataModule):
         )
 
     def val_dataloader(self):
-        
-        dataset = self.dataset['test']
+        dataset = self.dataset['val']
+        negative_examples = self.create_negative_examples(dataset)
+
+        dataset = concatenate_datasets([dataset, negative_examples])
         dataset = dataset.map(self.format_dataset)
         dataset = dataset.remove_columns(['child', 'parent', 'group'])
 
@@ -105,7 +123,19 @@ class PairPredictionDataModule(pl.LightningDataModule):
         )
 
     def test_dataloader(self):
-        return self.val_dataloader()
+        dataset = self.dataset['test']
+        negative_examples = self.create_negative_examples(dataset)
+
+        dataset = concatenate_datasets([dataset, negative_examples])
+        dataset = dataset.map(self.format_dataset)
+        dataset = dataset.remove_columns(['child', 'parent', 'group'])
+
+        return torch.utils.data.DataLoader(
+            dataset,
+            batch_size=self.hparams.batch_size,
+            collate_fn=DataCollatorWithPadding(self.tokenizer),
+            num_workers=self.hparams.num_workers,
+        )
     
 
 class DataCollatorWithPaddingAndMasking:
@@ -186,11 +216,14 @@ def get_taxonomy_dataset_binary(filename, entire_dataset=False, remove_columns=F
     # shuffle the train dataset but not the test dataset
     if not entire_dataset:
         train_dataset = dataset.filter(lambda example: example['group'] < 533).shuffle()
+        val_dataset = dataset.filter(lambda example: example['group'] >= 533 
+                                     and example['group'] <647)
         test_dataset = dataset.filter(lambda example: example['group'] >= 647)
 
         # datasets = dataset.train_test_split(test_size=0.1)
         return {
             'train': train_dataset,
+            'val': val_dataset,
             'test': test_dataset
         }
     else:
