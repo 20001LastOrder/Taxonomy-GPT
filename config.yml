@@ -7,3 +7,4 @@ model_name: lora_model
 batch_size: 64
 run_dir: /root/autodl-tmp/runs
 lora: True
+logger: wandb

@@ -54,7 +54,8 @@ def get_config_parser():
     parser.add_argument('--learnable_layers', type=int,
                         help='number of transformer layers to unfreeze',
                         default=0
-                        )
+    )
+    parser.add_argument('--logger', type=str, default='wandb')
     
     # TODO: add support for lora hyperparameters
     parser.add_argument('--lora', type=bool, help='whether to use lora', default=False)
