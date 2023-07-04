@@ -4,5 +4,5 @@ learnable_layers: 4
 lr: 0.0001
 max_epochs: 25
 model_name: model
-batch_size: 48
+batch_size: 64
 run_dir: /root/autodl-tmp/runs
