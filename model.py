@@ -21,7 +21,7 @@ class GPTSequenceClassifiationModule(pl.LightningModule):
         super().__init__()
         self.save_hyperparameters(hparams)
         self.loss_fct = torch.nn.BCEWithLogitsLoss()
-        self.model = get_gpt_binary_model()
+        self.model = get_gpt_binary_model(hparams)
 
     def forward(self, input_ids, attention_mask):
         outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
@@ -32,6 +32,7 @@ class GPTSequenceClassifiationModule(pl.LightningModule):
         input_ids, attention_mask, labels = batch['input_ids'], batch['attention_mask'], batch['labels']
         logits = self.forward(input_ids, attention_mask)
         loss = self.loss_fct(logits, labels.float())
+        # TODO: Measure training accuracy
         self.log('train_loss', loss)
         return loss
     
