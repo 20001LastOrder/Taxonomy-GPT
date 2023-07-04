@@ -6,3 +6,4 @@ jsonargparse==4.21.2
 scikit-learn==1.2.2
 networkx
 evaluate==0.4.0
+peft

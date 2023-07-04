@@ -2,6 +2,7 @@ from transformers import GPTNeoForCausalLM, GPTNeoForSequenceClassification, Aut
 import torch
 import pytorch_lightning as pl
 from embeddings import PartialOverrideEmbedding
+from peft import get_peft_config, PeftModel, PeftConfig, get_peft_model, LoraConfig, TaskType
 
 
 def get_gpt_neo_model():
@@ -14,13 +15,6 @@ def get_gpt_neo_model():
         param.requires_grad = True
     return model
 
-
-
-class GPTNeoForSequenceClassificationBinary(GPTNeoForSequenceClassification):
-    def __init__(self, config):
-        super().__init__(config)
-        self.score = torch.nn.Linear(2048, 1, bias=True)
-
         
 class GPTSequenceClassifiationModule(pl.LightningModule):
     def __init__(self, hparams):
@@ -28,15 +22,6 @@ class GPTSequenceClassifiationModule(pl.LightningModule):
         self.save_hyperparameters(hparams)
         self.loss_fct = torch.nn.BCEWithLogitsLoss()
         self.model = get_gpt_binary_model()
-        if self.hparams.prompt_learning:
-            new_wte = PartialOverrideEmbedding(self.model.transformer.wte, 25)
-            self.model.transformer.set_input_embeddings(new_wte)
-
-        num_layers = len(self.model.transformer.h)
-        for i in range(self.hparams.learnable_layers):
-            print('Changing layer ', num_layers - 1 - i)
-            for param in self.model.transformer.h[num_layers - 1 - i].mlp.parameters():
-                param.requires_grad = True
 
     def forward(self, input_ids, attention_mask):
         outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
@@ -74,7 +59,7 @@ class GPTSequenceClassifiationModule(pl.LightningModule):
 
 
 
-def get_gpt_binary_model():
+def get_gpt_binary_model(hparams):
     tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
     padding_id = tokenizer.convert_tokens_to_ids([tokenizer.eos_token])[0]
     model = GPTNeoForSequenceClassification.from_pretrained("EleutherAI/gpt-neo-1.3B", pad_token_id=padding_id)
@@ -87,5 +72,32 @@ def get_gpt_binary_model():
     model.score = torch.nn.Linear(2048, 1)
     for param in model.score.parameters():
         param.requires_grad = True
+
+
+    # modify the model based on the training configuraiton
+    # update the embedding layer of the first transformer block for prompt learning
+    if hparams.prompt_learning:
+            new_wte = PartialOverrideEmbedding(model.transformer.wte, 25)
+            model.transformer.set_input_embeddings(new_wte)
+
+    # wrappe the model with lora using  PEFT model
+    if hparams.lora:
+        lora_config = LoraConfig(
+            task_type=TaskType.SEQ_CLS,
+            inference_mode=False,
+            r=16,
+            lora_alpha=16,
+            lora_dropout=0.1,
+            bias='all'
+        )
+        model = get_peft_model(model, lora_config)
+        model.print_trainable_parameters()
+
+    # updat eth last n layers for finetuning (Prompt tuning or lora corresponds to n=0)
+    num_layers = len(model.transformer.h)
+    for i in range(hparams.learnable_layers):
+        print('Changing layer ', num_layers - 1 - i)
+        for param in model.transformer.h[num_layers - 1 - i].mlp.parameters():
+            param.requires_grad = True
 
     return model

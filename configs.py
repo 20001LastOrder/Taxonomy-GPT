@@ -55,6 +55,10 @@ def get_config_parser():
                         help='number of transformer layers to unfreeze',
                         default=0
                         )
+    
+    # TODO: add support for lora hyperparameters
+    parser.add_argument('--lora', type=bool, help='whether to use lora', default=False)
+
 
     return parser
 
