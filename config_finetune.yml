@@ -5,4 +5,6 @@ lr: 0.0001
 max_epochs: 25
 model_name: lora_model
 batch_size: 64
+lora: False
 run_dir: /root/autodl-tmp/runs
+logger: wandb

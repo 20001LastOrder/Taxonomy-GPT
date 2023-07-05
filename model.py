@@ -15,13 +15,18 @@ def get_gpt_neo_model():
         param.requires_grad = True
     return model
 
+class GPTNeoForSequenceClassificationBinary(GPTNeoForSequenceClassification):
+    def __init__(self, config):
+        super().__init__(config)
+        self.score = torch.nn.Linear(2048, 1, bias=True)
+
         
 class GPTSequenceClassifiationModule(pl.LightningModule):
     def __init__(self, hparams):
         super().__init__()
         self.save_hyperparameters(hparams)
         self.loss_fct = torch.nn.BCEWithLogitsLoss()
-        self.model = get_gpt_binary_model(hparams)
+        self.model = get_gpt_binary_model(self.hparams)
 
     def forward(self, input_ids, attention_mask):
         outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)

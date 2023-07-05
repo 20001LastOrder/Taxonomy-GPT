@@ -94,7 +94,7 @@ def main_lightning(args):
     )
 
     trainer.fit(model=model, datamodule=dataset)
-    trainer.test(ckpt_path='last',dataloaders = dataset.test_dataloader())
+    trainer.test(ckpt_path='best',dataloaders = dataset.test_dataloader())
 
 
 if __name__ == '__main__':

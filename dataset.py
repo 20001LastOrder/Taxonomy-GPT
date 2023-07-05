@@ -22,10 +22,6 @@ class PairPredictionDataModule(pl.LightningDataModule):
         self.prompt_learning = hparams.prompt_learning
         self.tokenizer = tokenizer
         self.dataset=  get_taxonomy_dataset_binary(self.hparams.dataset)
-        # self.train_group = self.group_pairs(self.dataset['train'])
-        # self.train_negatives = {}
-        # for key, value in self.train_group.items():
-        #     self.train_negatives[key] = self.create_negative_pairs(value)
 
     def group_pairs(self, dataset):
         result = defaultdict(list)
