@@ -1,10 +1,11 @@
 dataset: ./data/bansal_wordnet_true_pairs.csv
 prompt_learning: False
-learnable_layers: 4
+learnable_layers: 0 # 4
 lr: 0.0001
 max_epochs: 25
+negative_ratio: 3
 model_name: lora_model
 batch_size: 64
-lora: False
 run_dir: /root/autodl-tmp/runs
+lora: True
 logger: wandb

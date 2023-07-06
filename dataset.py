@@ -65,7 +65,7 @@ class PairPredictionDataModule(pl.LightningDataModule):
         negative_examples = []
         for group, edges in group.items():
             negative_examples.extend(
-                self.negative_sampling(negatives, group, len(edges) * self.negative_ratio)
+                self.negative_sampling(negatives, group, int(len(edges) * self.negative_ratio))
             )
         
         negative_examples = Dataset.from_list(negative_examples)
