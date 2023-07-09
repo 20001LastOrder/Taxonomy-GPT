@@ -1,4 +1,4 @@
-from transformers import GPTNeoForCausalLM, GPTNeoForSequenceClassification, AutoTokenizer
+from transformers import GPTNeoForCausalLM, GPTNeoForSequenceClassification, AutoTokenizer, AutoModelForSequenceClassification, RobertaForSequenceClassification
 import torch
 import pytorch_lightning as pl
 from embeddings import PartialOverrideEmbedding
@@ -71,18 +71,25 @@ class GPTSequenceClassifiationModule(pl.LightningModule):
 
 
 def get_gpt_binary_model(hparams):
-    tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
+    base_model = hparams.get('base_model', 'EleutherAI/gpt-neo-1.3B')
+
+    tokenizer = AutoTokenizer.from_pretrained(base_model)
     padding_id = tokenizer.convert_tokens_to_ids([tokenizer.eos_token])[0]
-    model = GPTNeoForSequenceClassification.from_pretrained("EleutherAI/gpt-neo-1.3B", pad_token_id=padding_id)
+    model = AutoModelForSequenceClassification.from_pretrained(base_model, pad_token_id=padding_id)
     
     for param in model.parameters():
         param.requires_grad = False
     
 
     # pop last layer 
-    model.score = torch.nn.Linear(2048, 1)
-    for param in model.score.parameters():
-        param.requires_grad = True
+    if type(model) == RobertaForSequenceClassification:
+        model.classifier.out_proj = torch.nn.Linear(1024, 1)
+        for param in model.classifier.parameters():
+            param.requires_grad = True
+    else:
+        model.score = torch.nn.Linear(2048, 1)
+        for param in model.score.parameters():
+            param.requires_grad = True
 
 
     # modify the model based on the training configuraiton
@@ -96,19 +103,44 @@ def get_gpt_binary_model(hparams):
         lora_config = LoraConfig(
             task_type=TaskType.SEQ_CLS,
             inference_mode=False,
-            r=16,
+            r=8,
             lora_alpha=16,
             lora_dropout=0.1,
-            bias='all'
+            bias='none'
         )
         model = get_peft_model(model, lora_config)
         model.print_trainable_parameters()
 
     # updat eth last n layers for finetuning (Prompt tuning or lora corresponds to n=0)
-    num_layers = len(model.transformer.h)
-    for i in range(hparams.learnable_layers):
-        print('Changing layer ', num_layers - 1 - i)
-        for param in model.transformer.h[num_layers - 1 - i].mlp.parameters():
-            param.requires_grad = True
+    print(model)
+
+    if type(model) == RobertaForSequenceClassification:
+        num_layers = len(model.roberta.encoder.layer)
+        for i in range(hparams.learnable_layers):
+            print('Changing layer ', num_layers - 1 - i)
+            layer = model.roberta.encoder.layer[num_layers - 1 - i]
+            for param in layer.intermediate.parameters():
+                param.requires_grad = True
+            
+            for param in layer.output.parameters():
+                param.requires_grad = True
+    else:
+        num_layers = len(model.transformer.h)
+        for i in range(hparams.learnable_layers):
+            print('Changing layer ', num_layers - 1 - i)
+            for param in model.transformer.h[num_layers - 1 - i].mlp.parameters():
+                param.requires_grad = True
 
     return model
+
+
+# def load_model(model_path, is_lora=False):
+#     tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
+
+#     if is_lora:
+#         padding_id = tokenizer.convert_tokens_to_ids([tokenizer.eos_token])[0]
+#         model = GPTNeoForSequenceClassification.from_pretrained("EleutherAI/gpt-neo-1.3B", pad_token_id=padding_id)
+    
+#         PeftConfig.from_pretrained(model_path)
+#     model = GPTNeoForSequenceClassificationBinary.from_pretrained(model_path)
+#     return model
