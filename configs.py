@@ -55,6 +55,8 @@ def get_config_parser():
                         help='number of transformer layers to unfreeze',
                         default=0
     )
+    parser.add_argument('--prompt_tuning', type=bool, default=False)
+    parser.add_argument('--base_model', type=str, default='EleutherAI/gpt-neo-1.3B')
     parser.add_argument('--logger', type=str, default='wandb')
     
     # TODO: add support for lora hyperparameters
