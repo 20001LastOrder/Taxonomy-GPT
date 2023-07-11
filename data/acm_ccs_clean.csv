@@ -1814,67 +1814,50 @@
 1812,Calculus,Lambda calculus,10002950_4
 1813,Calculus,Differential calculus,10002950_4
 1814,Calculus,Integral calculus,10002950_4
-1815,Enterprise information systems,Intranets,10002951_3
-1816,Enterprise information systems,Extranets,10002951_3
-1817,Enterprise information systems,Enterprise resource planning,10002951_3
-1818,Enterprise information systems,Enterprise applications,10002951_3
-1819,Enterprise information systems,Data centers,10002951_3
-1820,Collaborative and social computing systems and tools,Blogs,10002951_3
-1821,Collaborative and social computing systems and tools,Wikis,10002951_3
-1822,Collaborative and social computing systems and tools,Reputation systems,10002951_3
-1823,Collaborative and social computing systems and tools,Open source software,10002951_3
-1824,Collaborative and social computing systems and tools,Social networking sites,10002951_3
-1825,Collaborative and social computing systems and tools,Social tagging systems,10002951_3
-1826,Collaborative and social computing systems and tools,Synchronous editors,10002951_3
-1827,Collaborative and social computing systems and tools,Asynchronous editors,10002951_3
-1828,Electronic commerce,Digital cash,10002951_4
-1829,Electronic commerce,E-commerce infrastructure,10002951_4
-1830,Electronic commerce,Electronic data interchange,10002951_4
-1831,Electronic commerce,Electronic funds transfer,10002951_4
-1832,Electronic commerce,Online shopping,10002951_4
-1833,Electronic commerce,Online banking,10002951_4
-1834,Electronic commerce,Secure online transactions,10002951_4
-1835,Electronic commerce,Online auctions,10002951_4
-1836,Markup languages,Extensible Markup Language (XML),10002951_4
-1837,Markup languages,Hypertext languages,10002951_4
-1838,Social engineering attacks,Spoofing attacks,10002978_4
-1839,Social engineering attacks,Phishing,10002978_4
-1840,Network security,Security protocols,10002978_7
-1841,Network security,Web protocol security,10002978_7
-1842,Network security,Mobile and wireless security,10002978_7
-1843,Network security,Denial-of-service attacks,10002978_7
-1844,Network security,Firewalls,10002978_7
-1845,Mathematical optimization,Discrete optimization,10003752_5
-1846,Discrete optimization,Network optimization,10003752_5
-1847,Discrete optimization,Optimization with randomized search heuristics,10003752_5
-1848,Optimization with randomized search heuristics,Simulated annealing,10003752_5
-1849,Optimization with randomized search heuristics,Evolutionary algorithms,10003752_5
-1850,Optimization with randomized search heuristics,Tabu search,10003752_5
-1851,Optimization with randomized search heuristics,Randomized local search,10003752_5
-1852,Mathematical optimization,Continuous optimization,10003752_5
-1853,Continuous optimization,Linear programming,10003752_5
-1854,Continuous optimization,Semidefinite programming,10003752_5
-1855,Continuous optimization,Convex optimization,10003752_5
-1856,Continuous optimization,Quasiconvex programming and unimodality,10003752_5
-1857,Continuous optimization,Stochastic control and optimization,10003752_5
-1858,Continuous optimization,Quadratic programming,10003752_5
-1859,Continuous optimization,Nonconvex optimization,10003752_5
-1860,Continuous optimization,Bio-inspired optimization,10003752_5
-1861,Mathematical optimization,Mixed discrete-continuous optimization,10003752_5
-1862,Mixed discrete-continuous optimization,Submodular optimization and polymatroids,10003752_5
-1863,Mixed discrete-continuous optimization,Integer programming,10003752_5
-1864,Mathematical optimization,Non-parametric optimization,10003752_5
-1865,Non-parametric optimization,Genetic programming,10003752_5
-1866,Non-parametric optimization,Developmental representations,10003752_5
-1867,Parallel algorithms,MapReduce algorithms,10003752_5
-1868,Parallel algorithms,Self-organization,10003752_5
-1869,Parallel algorithms,Shared memory algorithms,10003752_5
-1870,Parallel algorithms,Vector / streaming algorithms,10003752_5
-1871,Parallel algorithms,Massively parallel algorithms,10003752_5
-1872,Kernel methods,Support vector machines,10003752_7
-1873,Kernel methods,Gaussian processes,10003752_7
-1874,Reinforcement learning,Sequential decision making,10003752_7
-1875,Reinforcement learning,Inverse reinforcement learning,10003752_7
-1876,Reinforcement learning,Apprenticeship learning,10003752_7
-1877,Reinforcement learning,Multi-agent reinforcement learning,10003752_7
-1878,Reinforcement learning,Adversarial learning,10003752_7
+1815,Calculus,Lambda calculus,10002950_5
+1816,Calculus,Differential calculus,10002950_5
+1817,Calculus,Integral calculus,10002950_5
+1818,Electronic commerce,Digital cash,10002951_4
+1819,Electronic commerce,E-commerce infrastructure,10002951_4
+1820,Electronic commerce,Electronic data interchange,10002951_4
+1821,Electronic commerce,Electronic funds transfer,10002951_4
+1822,Electronic commerce,Online shopping,10002951_4
+1823,Electronic commerce,Online banking,10002951_4
+1824,Electronic commerce,Secure online transactions,10002951_4
+1825,Electronic commerce,Online auctions,10002951_4
+1826,Markup languages,Extensible Markup Language (XML),10002951_4
+1827,Markup languages,Hypertext languages,10002951_4
+1828,Social engineering attacks,Spoofing attacks,10002978_4
+1829,Social engineering attacks,Phishing,10002978_4
+1830,Network security,Security protocols,10003033_6
+1831,Network security,Web protocol security,10003033_6
+1832,Network security,Mobile and wireless security,10003033_6
+1833,Network security,Denial-of-service attacks,10003033_6
+1834,Network security,Firewalls,10003033_6
+1835,Collaborative and social computing systems and tools,Blogs,10003120_3
+1836,Collaborative and social computing systems and tools,Wikis,10003120_3
+1837,Collaborative and social computing systems and tools,Reputation systems,10003120_3
+1838,Collaborative and social computing systems and tools,Open source software,10003120_3
+1839,Collaborative and social computing systems and tools,Social networking sites,10003120_3
+1840,Collaborative and social computing systems and tools,Social tagging systems,10003120_3
+1841,Collaborative and social computing systems and tools,Synchronous editors,10003120_3
+1842,Collaborative and social computing systems and tools,Asynchronous editors,10003120_3
+1843,Kernel methods,Support vector machines,10003752_7
+1844,Kernel methods,Gaussian processes,10003752_7
+1845,Reinforcement learning,Sequential decision making,10003752_7
+1846,Reinforcement learning,Inverse reinforcement learning,10003752_7
+1847,Reinforcement learning,Apprenticeship learning,10003752_7
+1848,Reinforcement learning,Multi-agent reinforcement learning,10003752_7
+1849,Reinforcement learning,Adversarial learning,10003752_7
+1850,Parallel algorithms,MapReduce algorithms,10010147_2
+1851,Parallel algorithms,Self-organization,10010147_2
+1852,Parallel algorithms,Shared memory algorithms,10010147_2
+1853,Parallel algorithms,Vector / streaming algorithms,10010147_2
+1854,Parallel algorithms,Massively parallel algorithms,10010147_2
+1855,Enterprise information systems,Intranets,10010405_2
+1856,Enterprise information systems,Extranets,10010405_2
+1857,Enterprise information systems,Enterprise resource planning,10010405_2
+1858,Enterprise information systems,Enterprise applications,10010405_2
+1859,Enterprise information systems,Data centers,10010405_2
+1860,Markup languages,Extensible Markup Language (XML),10010405_11
+1861,Markup languages,Hypertext languages,10010405_11
