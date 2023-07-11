@@ -213,7 +213,7 @@ def get_taxonomy_dataset_binary(filename, entire_dataset=False, remove_columns=F
     if not entire_dataset:
         train_dataset = dataset.filter(lambda example: example['type'] == 'train').shuffle()
         val_dataset = dataset.filter(lambda example: example['type'] == 'val')
-        test_dataset = dataset.filter(lambda example: example['type'] >= 'test')
+        test_dataset = dataset.filter(lambda example: example['type'] == 'test')
 
         # datasets = dataset.train_test_split(test_size=0.1)
         return {

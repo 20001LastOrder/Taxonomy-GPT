@@ -1,6 +1,6 @@
 dataset: ./data/acm_ccs_clean.csv # ./data/bansal_wordnet_true_pairs.csv
 prompt_learning: False
-learnable_layers: 3
+learnable_layers: 5
 check_val_every_n_epoch: 1
 negative_ratio: 5
 lr: 0.0001

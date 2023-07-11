@@ -64,13 +64,13 @@ class GPTSequenceClassifiationModule(pl.LightningModule):
 
         # calculate the weighted loss since there are more negative pairs then positive ones
         loss = self.loss_fct(logits, labels.float())
-        weights = (labels == 1).float() * self.hparams.negative_ratio + (labels == 0).float()
+        weights = (labels == 1).float() + (labels == 0).float() # (labels == 1).float() * self.hparams.negative_ratio + (labels == 0).float()
         loss = (loss * weights).mean()
 
         acc = (preds == labels).float().mean()
-        recall = recall_score(labels.cpu(), preds.cpu())
-        precision = precision_score(labels.cpu(), preds.cpu())
-        f1 = f1_score(labels.cpu(), preds.cpu())
+        recall = recall_score(labels.cpu(), preds.cpu(), zero_division=0)
+        precision = precision_score(labels.cpu(), preds.cpu(), zero_division=0)
+        f1 = f1_score(labels.cpu(), preds.cpu(), zero_division=0)
 
 
         self.log(f'{phrase}_loss', loss)
