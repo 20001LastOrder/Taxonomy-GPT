@@ -93,7 +93,7 @@ class PairPredictionDataModule(pl.LightningDataModule):
 
         dataset = concatenate_datasets([dataset, negative_examples])
         dataset = dataset.map(self.format_dataset)
-        dataset = dataset.remove_columns(['child', 'parent', 'group'])
+        dataset = dataset.remove_columns(['child', 'parent', 'group', 'type'])
 
         return torch.utils.data.DataLoader(
             dataset,
@@ -109,7 +109,7 @@ class PairPredictionDataModule(pl.LightningDataModule):
 
         dataset = concatenate_datasets([dataset, negative_examples])
         dataset = dataset.map(self.format_dataset)
-        dataset = dataset.remove_columns(['child', 'parent', 'group'])
+        dataset = dataset.remove_columns(['child', 'parent', 'group', 'type'])
 
         return torch.utils.data.DataLoader(
             dataset,
@@ -124,7 +124,7 @@ class PairPredictionDataModule(pl.LightningDataModule):
 
         dataset = concatenate_datasets([dataset, negative_examples])
         dataset = dataset.map(self.format_dataset)
-        dataset = dataset.remove_columns(['child', 'parent', 'group'])
+        dataset = dataset.remove_columns(['child', 'parent', 'group', 'type'])
 
         return torch.utils.data.DataLoader(
             dataset,
@@ -203,18 +203,17 @@ def get_taxonomy_dataset_binary(filename, entire_dataset=False, remove_columns=F
     # if "Unnamed: 0" in list(dataset.features.keys()):
     #     dataset = dataset.remove_columns(['Unnamed: 0', 'flag'])
     # else: 
-    if 'type' in list(dataset.features.keys()):
-        dataset = dataset.remove_columns(['type'])
+    # if 'type' in list(dataset.features.keys()):
+    #     dataset = dataset.remove_columns(['type'])
 
     if remove_columns:
         dataset = dataset.remove_columns(['child', 'parent', 'group'])
 
     # shuffle the train dataset but not the test dataset
     if not entire_dataset:
-        train_dataset = dataset.filter(lambda example: example['group'] < 533).shuffle()
-        val_dataset = dataset.filter(lambda example: example['group'] >= 533 
-                                     and example['group'] <647)
-        test_dataset = dataset.filter(lambda example: example['group'] >= 647)
+        train_dataset = dataset.filter(lambda example: example['type'] == 'train').shuffle()
+        val_dataset = dataset.filter(lambda example: example['type'] == 'val')
+        test_dataset = dataset.filter(lambda example: example['type'] >= 'test')
 
         # datasets = dataset.train_test_split(test_size=0.1)
         return {

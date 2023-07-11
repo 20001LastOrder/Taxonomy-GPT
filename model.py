@@ -3,6 +3,7 @@ import torch
 import pytorch_lightning as pl
 from embeddings import PartialOverrideEmbedding
 from peft import get_peft_config, PeftModel, PeftConfig, get_peft_model, LoraConfig, TaskType
+from sklearn.metrics import f1_score, precision_score, recall_score
 
 
 def get_gpt_neo_model():
@@ -25,8 +26,12 @@ class GPTSequenceClassifiationModule(pl.LightningModule):
     def __init__(self, hparams):
         super().__init__()
         self.save_hyperparameters(hparams)
-        self.loss_fct = torch.nn.BCEWithLogitsLoss()
+        self.loss_fct = torch.nn.BCEWithLogitsLoss(reduction='none')
         self.model = get_gpt_binary_model(self.hparams)
+
+        self.metrics = {}
+        for phrase in ['train', 'val', 'test']:
+            self.metrics[phrase] = {}
 
     def forward(self, input_ids, attention_mask):
         outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
@@ -36,33 +41,45 @@ class GPTSequenceClassifiationModule(pl.LightningModule):
     def training_step(self, batch, batch_idx):
         input_ids, attention_mask, labels = batch['input_ids'], batch['attention_mask'], batch['labels']
         logits = self.forward(input_ids, attention_mask)
-        loss = self.loss_fct(logits, labels.float())
         
-        # measure training acc
-        preds = (logits > 0).int()
-        acc = (preds == labels).float().mean()
+        # measure metrics
+        loss= self.log_metric('train', logits, labels)
 
-        self.log('train_acc', acc)
-        self.log('train_loss', loss)
         return loss
     
     def validation_step(self, batch, batch_idx):
         input_ids, attention_mask, labels=batch['input_ids'], batch['attention_mask'], batch['labels']
         logits = self.forward(input_ids, attention_mask)
-        loss = self.loss_fct(logits, labels.float())
-        preds = (logits > 0).int()
-        acc = (preds == labels).float().mean()
-        self.log('val_loss', loss)
-        self.log('val_acc', acc)
+
+        self.log_metric('val', logits, labels)
 
     def test_step(self, batch, batch_idx):
         input_ids, attention_mask, labels=batch['input_ids'], batch['attention_mask'], batch['labels']
         logits = self.forward(input_ids, attention_mask)
-        loss = self.loss_fct(logits, labels.float())
+        
+        self.log_metric('test', logits, labels)
+
+    def log_metric(self, phrase, logits, labels):
         preds = (logits > 0).int()
+
+        # calculate the weighted loss since there are more negative pairs then positive ones
+        loss = self.loss_fct(logits, labels.float())
+        weights = (labels == 1).float() * self.hparams.negative_ratio + (labels == 0).float()
+        loss = (loss * weights).mean()
+
         acc = (preds == labels).float().mean()
-        self.log('test_loss', loss)
-        self.log('test_acc', acc)
+        recall = recall_score(labels.cpu(), preds.cpu())
+        precision = precision_score(labels.cpu(), preds.cpu())
+        f1 = f1_score(labels.cpu(), preds.cpu())
+
+
+        self.log(f'{phrase}_loss', loss)
+        self.log(f'{phrase}_acc', acc)
+        self.log(f'{phrase}_f1', f1)
+        self.log(f'{phrase}_precision', precision)
+        self.log(f'{phrase}_recall', recall)
+
+        return loss
     
     def configure_optimizers(self):
         optimizer = torch.optim.Adam(self.model.parameters(), lr=self.hparams.lr, weight_decay=self.hparams.weight_decay)
