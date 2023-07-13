@@ -11,6 +11,7 @@ import numpy as np
 from datasets import Dataset, concatenate_datasets
 
 
+# prompt_template = "I am doing the taxonomy research. I think {child} is a subtopic of {parent}"
 prompt_template = "I am doing the taxonomy research. I think {child} is a subtopic of {parent}"
 
 
@@ -64,8 +65,12 @@ class PairPredictionDataModule(pl.LightningDataModule):
 
         negative_examples = []
         for group, edges in group.items():
+            if self.negative_ratio > 0:
+                examples = self.negative_sampling(negatives, group, int(len(edges) * self.negative_ratio))
+            else:
+                examples = negatives[group]
             negative_examples.extend(
-                self.negative_sampling(negatives, group, int(len(edges) * self.negative_ratio))
+                examples
             )
         
         negative_examples = Dataset.from_list(negative_examples)
