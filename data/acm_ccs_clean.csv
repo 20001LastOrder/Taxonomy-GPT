@@ -1,4 +1,4 @@
-parent_name,child_name,group,type
+parent,child,group,type
 Discrete mathematics,Combinatorics,10002950_1,train
 Combinatorics,Combinatoric problems,10002950_1,train
 Combinatorics,Permutations and combinations,10002950_1,train

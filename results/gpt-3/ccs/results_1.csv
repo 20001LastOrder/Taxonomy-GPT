@@ -1,0 +1,421 @@
+group,child,parent
+10002950_2,Probability and statistics,Statistical paradigms
+10002950_2,Robust regression,Regression analysis
+10002950_2,Kernel density estimators,Density estimation
+10002950_2,Markov-chain Monte Carlo convergence measures,Markov-chain Monte Carlo methods
+10002950_2,Stochastic differential equations,Stochastic processes
+10002950_2,Markov networks,Markov processes
+10002950_2,Bootstrapping,Resampling methods
+10002950_2,Factor graphs,Probabilistic representations
+10002950_2,Bayesian networks,Probabilistic representations
+10002950_2,Multivariate statistics,Nonparametric statistics
+10002950_2,Contingency table analysis,Nonparametric statistics
+10002950_2,Equational models,Statistical paradigms
+10002950_2,Survival analysis,Time series analysis
+10002950_2,Time series analysis,Stochastic processes
+10002950_2,Variable elimination,Probabilistic inference problems
+10002950_2,Loopy belief propagation,Probabilistic reasoning algorithms
+10002950_2,Spline models,Regression analysis
+10002950_2,Bayesian nonparametric models,Probabilistic representations
+10002950_2,Bayesian computation,Probabilistic algorithms
+10002950_2,Kalman filters and hidden Markov models,Markov processes
+10002950_2,Markov-chain Monte Carlo methods,Markov processes
+10002950_2,Expectation maximization,Probabilistic algorithms
+10002950_2,Sequential Monte Carlo methods,Probabilistic algorithms
+10002950_2,Probabilistic representations,Probabilistic reasoning algorithms
+10002950_2,Probabilistic algorithms,Probabilistic reasoning algorithms
+10002950_2,Queueing theory,Stochastic processes
+10002950_2,Simulated annealing,Random number generation
+10002950_2,Distribution functions,Nonparametric statistics
+10002950_2,Markov processes,Stochastic processes
+10002950_2,Stochastic processes,Probability and statistics
+10002950_2,Nonparametric statistics,Probability and statistics
+10002950_2,Jackknifing,Resampling methods
+10002950_2,Statistical graphics,Statistical paradigms
+10002950_2,Gibbs sampling,Markov-chain Monte Carlo methods
+10002950_2,Maximum likelihood estimation,Probabilistic algorithms
+10002950_2,Variational methods,Probabilistic algorithms
+10002950_2,Probabilistic reasoning algorithms,Probabilistic algorithms
+10002950_2,Causal networks,Probabilistic reasoning algorithms
+10002950_2,Statistical paradigms,Probability and statistics
+10002950_2,Max marginal computation,Probabilistic inference problems
+10002950_2,Dimensionality reduction,Nonparametric statistics
+10002950_2,Probabilistic inference problems,Probabilistic reasoning algorithms
+10002950_2,Computing most probable explanation,Probabilistic reasoning algorithms
+10002950_2,Renewal theory,Stochastic processes
+10002950_2,Cluster analysis,Nonparametric statistics
+10002950_2,Exploratory data analysis,Statistical graphics
+10002950_2,Decision diagrams,Nonparametric representations
+10002950_2,Density estimation,Nonparametric statistics
+10002950_2,Random number generation,Nonparametric representations
+10002950_2,Quantile regression,Regression analysis
+10002950_2,Metropolis-Hastings algorithm,Markov-chain Monte Carlo methods
+10002950_2,Hypothesis testing and confidence interval computation,Statistical paradigms
+10002950_2,Nonparametric representations,Nonparametric statistics
+10002950_3,Solvers,Mathematical software
+10002950_3,Statistical software,Mathematical software
+10002950_3,Mathematical software performance,Mathematical software
+10002950_5,Integral calculus,Calculus
+10002950_5,Differential calculus,Calculus
+10002950_5,Calculus,Continuous mathematics
+10002950_5,Topology,Continuous mathematics
+10002950_5,Point-set topology,Topology
+10002950_5,Algebraic topology,Topology
+10002950_5,Geometric topology,Topology
+10002950_5,Continuous functions,Topology
+10002950_5,Lambda calculus,Calculus
+10002951_5,Dictionaries,Document representation
+10002951_5,Similarity measures,Retrieval models and ranking
+10002951_5,Document filtering,Retrieval effectiveness
+10002951_5,Distributed retrieval,Retrieval efficiency
+10002951_5,Query log analysis,Search engine architectures and scalability
+10002951_5,Web and social media search,Multimedia and multimodal retrieval
+10002951_5,Multilingual and cross-lingual retrieval,Language models
+10002951_5,Question answering,Query intent
+10002951_5,Data encoding and canonicalization,Search engine indexing
+10002951_5,Thesauri,Document topic models
+10002951_5,Document structure,Structured text search
+10002951_5,Environment-specific retrieval,Specialized information retrieval
+10002951_5,Business intelligence,Specialized information retrieval
+10002951_5,Presentation of retrieval results,Users and interactive retrieval
+10002951_5,Information retrieval diversity,Retrieval effectiveness
+10002951_5,Search interfaces,Users and interactive retrieval
+10002951_5,Near-duplicate and plagiarism detection,Adversarial retrieval
+10002951_5,Content analysis and feature selection,Novelty in information retrieval
+10002951_5,Probabilistic retrieval models,Retrieval models and ranking
+10002951_5,Chemical and biochemical retrieval,Specialized information retrieval
+10002951_5,Structure and multilingual text search,Multilingual and cross-lingual retrieval
+10002951_5,Clustering and classification,Retrieval models and ranking
+10002951_5,Learning to rank,Retrieval models and ranking
+10002951_5,Enterprise search,Specialized information retrieval
+10002951_5,Retrieval efficiency,Retrieval models and ranking
+10002951_5,Multimedia and multimodal retrieval,Information retrieval
+10002951_5,Link and co-citation analysis,Search engine architectures and scalability
+10002951_5,Users and interactive retrieval,Information retrieval
+10002951_5,Retrieval effectiveness,Information retrieval
+10002951_5,Ontologies,Document representation
+10002951_5,Rank aggregation,Retrieval models and ranking
+10002951_5,Document topic models,Document representation
+10002951_5,Information retrieval query processing,Query representation
+10002951_5,Desktop search,Specialized information retrieval
+10002951_5,Personalization,Users and interactive retrieval
+10002951_5,Structured text search,Specialized information retrieval
+10002951_5,Summarization,Information retrieval
+10002951_5,Information retrieval,Retrieval models and ranking
+10002951_5,Language models,Retrieval models and ranking
+10002951_5,Collaborative search,Users and interactive retrieval
+10002951_5,Recommender systems,Users and interactive retrieval
+10002951_5,Adversarial retrieval,Retrieval models and ranking
+10002951_5,Peer-to-peer retrieval,Retrieval efficiency
+10002951_5,Retrieval on mobile devices,Specialized information retrieval
+10002951_5,Evaluation of retrieval results,Retrieval models and ranking
+10002951_5,Retrieval models and ranking,Information retrieval
+10002951_5,Test collections,Retrieval effectiveness
+10002951_5,Speech / audio search,Multimedia and multimodal retrieval
+10002951_5,Search engine architectures and scalability,Information retrieval
+10002951_5,Mathematics retrieval,Specialized information retrieval
+10002951_5,Image search,Multimedia and multimodal retrieval
+10002951_5,Query representation,Query intent
+10002951_5,Search index compression,Retrieval efficiency
+10002951_5,Searching with auxiliary databases,Specialized information retrieval
+10002951_5,Search engine indexing,Information retrieval
+10002951_5,Top-k retrieval in databases,Retrieval models and ranking
+10002951_5,Query suggestion,Query reformulation
+10002951_5,"Combination, fusion and federated search",Retrieval models and ranking
+10002951_5,Video search,Multimedia and multimodal retrieval
+10002951_5,Music retrieval,Multimedia and multimodal retrieval
+10002951_5,Task models,Query intent
+10002951_5,Query intent,Information retrieval
+10002951_5,Expert search,Specialized information retrieval
+10002951_5,Document collection models,Document representation
+10002951_5,Query reformulation,Query intent
+10002951_5,Relevance assessment,Retrieval effectiveness
+10002951_5,Sentiment analysis,Novelty in information retrieval
+10002951_5,Novelty in information retrieval,Retrieval effectiveness
+10002978_3,Digital rights management,Security services
+10002978_3,Privacy-preserving protocols,Security services
+10002978_3,Biometrics,Authentication
+10002978_3,Multi-factor authentication,Authentication
+10002978_3,Access control,Authorization
+10002978_3,Graphical / visual passwords,Authentication
+10002978_3,Authorization,Access control
+10002978_3,"Pseudonymity, anonymity and untraceability",Privacy-preserving protocols
+10002978_9,Social network security and privacy,Software and application security
+10002978_9,Software security engineering,Software and application security
+10002978_9,Domain-specific security and privacy architectures,Software and application security
+10002978_9,Web application security,Software and application security
+10002978_9,Software reverse engineering,Software and application security
+10003120_3,Social networking sites,Social networks
+10003120_3,"Collaborative and social computing theory, concepts and paradigms",Collaborative and social computing
+10003120_3,Social recommendation,Collaborative filtering
+10003120_3,Ethnographic studies,Empirical studies in collaborative and social computing
+10003120_3,Collaborative and social computing devices,Collaborative and social computing systems and tools
+10003120_3,Social media,Collaborative and social computing
+10003120_3,Open source software,Collaborative and social computing systems and tools
+10003120_3,Collaborative and social computing design and evaluation methods,Collaborative and social computing
+10003120_3,Collaborative content creation,Collaborative and social computing
+10003120_3,Social engineering (social sciences),"Collaborative and social computing theory, concepts and paradigms"
+10003120_3,Blogs,Social media
+10003120_3,Social tagging systems,Social tagging
+10003120_3,Social navigation,Collaborative and social computing systems and tools
+10003120_3,Computer supported cooperative work,Collaborative and social computing
+10003120_3,Reputation systems,Collaborative and social computing systems and tools
+10003120_3,Social content sharing,Collaborative and social computing
+10003120_3,Collaborative and social computing,Social networks
+10003120_3,Wikis,Collaborative and social computing systems and tools
+10003120_3,Collaborative filtering,Collaborative and social computing
+10003120_3,Social network analysis,Social networks
+10003120_3,Empirical studies in collaborative and social computing,Collaborative and social computing
+10003120_3,Asynchronous editors,Collaborative and social computing systems and tools
+10003120_3,Synchronous editors,Collaborative and social computing systems and tools
+10003456_2,Online auctions policy,Commerce policy
+10003456_2,Governmental regulations,Government technology policy
+10003456_2,Malware / spyware crime,Computer crime
+10003456_2,Copyrights,Intellectual property
+10003456_2,Licensing,Intellectual property
+10003456_2,Software reverse engineering,Computer crime
+10003456_2,Technology and censorship,Censorship
+10003456_2,Acceptable use policy restrictions,Privacy policies
+10003456_2,Hate speech,Censorship
+10003456_2,Trademarks,Intellectual property
+10003456_2,Age-based restrictions,Governmental regulations
+10003456_2,Intellectual property,Governmental regulations
+10003456_2,Computing / technology policy,Government technology policy
+10003456_2,Medical records,Medical information policy
+10003456_2,Patient privacy,Medical information policy
+10003456_2,Computer crime,Governmental regulations
+10003456_2,Taxation,Government technology policy
+10003456_2,Database protection laws,Intellectual property
+10003456_2,Hardware reverse engineering,Computer crime
+10003456_2,Treaties,Government technology policy
+10003456_2,Governmental surveillance,Surveillance
+10003456_2,Political speech,Censorship
+10003456_2,Soft intellectual property,Intellectual property
+10003456_2,Antitrust and competition,Commerce policy
+10003456_2,Censorship,Government technology policy
+10003456_2,Identity theft,Privacy policies
+10003456_2,Genetic information,Medical information policy
+10003456_2,Digital rights management,Intellectual property
+10003456_2,Import / export controls,Government technology policy
+10003456_2,Consumer products policy,Commerce policy
+10003456_2,Government technology policy,Governmental regulations
+10003456_2,Social engineering attacks,Computer crime
+10003456_2,Medical technologies,Medical information policy
+10003456_2,Financial crime,Commerce policy
+10003456_2,Health information exchanges,Medical information policy
+10003456_2,Censoring filters,Censorship
+10003456_2,Personal health records,Medical information policy
+10003456_2,Privacy policies,Governmental regulations
+10003456_2,Net neutrality,Government technology policy
+10003456_2,Pornography,Censorship
+10003456_2,Transborder data flow,Government technology policy
+10003456_2,Secondary liability,Intellectual property
+10003456_2,Medical information policy,Governmental regulations
+10003456_2,Universal access,Government technology policy
+10003456_2,Patents,Intellectual property
+10003456_2,Internet governance / domain names,Government technology policy
+10003456_2,Corporate surveillance,Surveillance
+10003456_2,Commerce policy,Government technology policy
+10003456_2,Network access control,Government technology policy
+10003456_2,Remote medicine,Medical technologies
+10003456_2,Surveillance,Government technology policy
+10003456_2,Network access restrictions,Government technology policy
+10003456_2,Broadband access,Network access restrictions
+10010147_3,Motion path planning,Robotics
+10010147_3,Computational photography,Computer vision
+10010147_3,Description logics,Knowledge representation and reasoning
+10010147_3,Reasoning about belief and knowledge,Knowledge representation and reasoning
+10010147_3,Randomized search,Search methodologies
+10010147_3,Language resources,Natural language processing
+10010147_3,Biometrics,Computer vision
+10010147_3,Shape inference,Computer vision
+10010147_3,Computer vision representations,Computer vision
+10010147_3,Mobile agents,Multi-agent systems
+10010147_3,Temporal reasoning,Knowledge representation and reasoning
+10010147_3,Philosophical/theoretical foundations of artificial intelligence,Artificial intelligence
+10010147_3,Epipolar geometry,Computer vision
+10010147_3,"Discourse, dialogue and pragmatics",Natural language processing
+10010147_3,Distributed artificial intelligence,Multi-agent systems
+10010147_3,Image and video acquisition,Computer vision
+10010147_3,Activity recognition and understanding,Computer vision
+10010147_3,Hyperspectral imaging,Computer vision
+10010147_3,Intelligent agents,Artificial intelligence
+10010147_3,Natural language generation,Natural language processing
+10010147_3,Machine translation,Natural language processing
+10010147_3,Cognitive science,Artificial intelligence
+10010147_3,Cognitive robotics,Robotics
+10010147_3,Causal reasoning and diagnostics,Knowledge representation and reasoning
+10010147_3,Computational control theory,Robotics
+10010147_3,Spatial and physical reasoning,Knowledge representation and reasoning
+10010147_3,Reconstruction,Computer vision
+10010147_3,Object detection,Computer vision
+10010147_3,Active vision,Computer vision
+10010147_3,Scene understanding,Computer vision
+10010147_3,Logic programming and answer set programming,Knowledge representation and reasoning
+10010147_3,Image representations,Computer vision
+10010147_3,Vagueness and fuzzy logic,Knowledge representation and reasoning
+10010147_3,Probabilistic reasoning,Knowledge representation and reasoning
+10010147_3,Video segmentation,Computer vision
+10010147_3,Interest point and salient region detections,Computer vision
+10010147_3,Tracking,Computer vision
+10010147_3,Appearance and texture representations,Computer vision
+10010147_3,Matching,Computer vision
+10010147_3,Scene anomaly detection,Computer vision
+10010147_3,Visual content-based indexing and retrieval,Computer vision
+10010147_3,Hierarchical representations,Knowledge representation and reasoning
+10010147_3,Heuristic function construction,Search methodologies
+10010147_3,Lexical semantics,Natural language processing
+10010147_3,Planning with abstraction and generalization,Robotics
+10010147_3,Search with partial observations,Search methodologies
+10010147_3,Cooperation and coordination,Multi-agent systems
+10010147_3,Camera calibration,Computer vision
+10010147_3,Theory of mind,Artificial intelligence
+10010147_3,Vision for robotics,Robotics
+10010147_3,Motion capture,Robotics
+10010147_3,Game tree search,Artificial intelligence
+10010147_3,Control methods,Robotics
+10010147_3,Shape representations,Computer vision
+10010147_3,Speech recognition,Natural language processing
+10010147_3,Information extraction,Natural language processing
+10010147_3,Image segmentation,Computer vision
+10010147_3,Robotic planning,Robotics
+10010147_3,Abstraction and micro-operators,Artificial intelligence
+10010147_3,Planning for deterministic actions,Robotics
+10010147_3,Visual inspection,Computer vision
+10010147_3,Discrete space search,Search methodologies
+10010147_3,Semantic networks,Knowledge representation and reasoning
+10010147_3,Object identification,Computer vision
+10010147_3,Evolutionary robotics,Robotics
+10010147_3,Multi-agent planning,Multi-agent systems
+10010147_3,Object recognition,Computer vision
+10010147_3,Planning under uncertainty,Robotics
+10010147_3,Continuous space search,Search methodologies
+10010147_3,3D imaging,Computer vision
+10010147_3,"Nonmonotonic, default reasoning and belief revision",Knowledge representation and reasoning
+10010147_3,Planning and scheduling,Robotics
+10010147_3,Ontology engineering,Knowledge representation and reasoning
+10010147_3,Phonology / morphology,Natural language processing
+10010147_3,Video summarization,Computer vision
+10010147_5,Modeling and simulation,Simulation types and techniques
+10010147_5,Massively parallel and high-performance simulations,Modeling and simulation
+10010147_5,Quantum mechanic simulation,Modeling and simulation
+10010147_5,Molecular simulation,Modeling and simulation
+10010147_5,Agent / discrete models,Modeling methodologies
+10010147_5,Model development and analysis,Modeling methodologies
+10010147_5,Visual analytics,Modeling and simulation
+10010147_5,Simulation tools,Simulation support systems
+10010147_5,Simulation theory,Modeling and simulation
+10010147_5,Continuous simulation,Modeling and simulation
+10010147_5,Interactive simulation,Modeling and simulation
+10010147_5,Scientific visualization,Modeling and simulation
+10010147_5,Simulation support systems,Modeling and simulation
+10010147_5,Simulation environments,Modeling and simulation
+10010147_5,Real-time simulation,Modeling and simulation
+10010147_5,Simulation by animation,Modeling and simulation
+10010147_5,Modeling methodologies,Modeling and simulation
+10010147_5,Distributed simulation,Modeling and simulation
+10010147_5,Systems theory,Modeling and simulation
+10010147_5,Artificial life,Modeling and simulation
+10010147_5,Continuous models,Modeling and simulation
+10010147_5,Model verification and validation,Modeling and simulation
+10010147_5,Simulation evaluation,Modeling and simulation
+10010147_5,Rare-event simulation,Modeling and simulation
+10010147_5,Data assimilation,Modeling and simulation
+10010147_5,Multiscale systems,Modeling and simulation
+10010147_5,Network science,Modeling and simulation
+10010147_5,Simulation languages,Modeling and simulation
+10010147_5,Uncertainty quantification,Modeling and simulation
+10010147_5,Discrete-event simulation,Modeling and simulation
+10010405_4,Transcriptomics,Genomics
+10010405_4,Molecular sequence analysis,Genomics
+10010405_4,Computational genomics,Genomics
+10010405_4,Molecular evolution,Genomics
+10010405_4,Population genetics,Genomics
+10010405_4,Recognition of genes and regulatory elements,Genomics
+10010405_4,Genetics,Life and medical sciences
+10010405_4,Bioinformatics,Computational biology
+10010405_4,Computational proteomics,Proteomics
+10010405_4,Proteomics,Molecular structural biology
+10010405_4,Computational transcriptomics,Transcriptomics
+10010405_4,Systems biology,Life and medical sciences
+10010405_4,Imaging,Life and medical sciences
+10010405_4,Metabolomics / metabonomics,Life and medical sciences
+10010405_4,Health informatics,Health care information systems
+10010405_4,Sequencing and genotyping technologies,Genomics
+10010405_4,Computational biology,Bioinformatics
+10010583_2,Wireless devices,"Communication hardware, interfaces and storage"
+10010583_2,Beamforming,"Communication hardware, interfaces and storage"
+10010583_2,Wireless integrated network sensors,Sensor devices and platforms
+10010583_2,Sensor applications and deployments,Sensor devices and platforms
+10010583_2,Tactile and hand-based interfaces,Sensor devices and platforms
+10010583_2,Buses and high-speed links,Networking hardware
+10010583_2,External storage,"Communication hardware, interfaces and storage"
+10010583_2,Sound-based input / output,"Communication hardware, interfaces and storage"
+10010583_2,Sensors and actuators,Sensor devices and platforms
+10010583_2,Haptic devices,Sensor devices and platforms
+10010583_2,Signal processing systems,Digital signal processing
+10010583_2,Displays and imagers,"Communication hardware, interfaces and storage"
+10010583_2,Electro-mechanical devices,Sensor devices and platforms
+10010583_2,Noise reduction,Signal processing systems
+10010583_2,Touch screens,"Communication hardware, interfaces and storage"
+10010583_2,Printers,"Communication hardware, interfaces and storage"
+10010583_2,Scanners,"Communication hardware, interfaces and storage"
+10010583_7,Timing analysis and sign-off,Physical verification
+10010583_7,Semi-formal verification,Functional verification
+10010583_7,Transaction-level verification,Functional verification
+10010583_7,Bug fixing (hardware),"Bug detection, localization and diagnosis"
+10010583_7,Coverage metrics,Functional verification
+10010583_7,Hardware validation,Functional verification
+10010583_7,"Bug detection, localization and diagnosis",Functional verification
+10010583_7,Simulation and emulation,Functional verification
+10010583_7,Layout-versus-schematics,Physical verification
+10010583_7,Design for debug,Functional verification
+10010583_7,Post-manufacture validation and debug,Functional verification
+10010583_7,Equivalence checking,Functional verification
+10010583_7,Theorem proving and SAT solving,Model checking
+10010583_7,Power and thermal analysis,Physical verification
+10010583_7,Model checking,Assertion checking
+10010583_7,Assertion checking,Functional verification
+10010583_7,Design rule checking,Physical verification
+10010583_8,Online test and diagnostics,Test-pattern generation and fault simulation
+10010583_8,Test data compression,Test-pattern generation and fault simulation
+10010583_8,Testing with distributed and parallel systems,Test-pattern generation and fault simulation
+10010583_8,Defect-based test,Test-pattern generation and fault simulation
+10010583_8,Design for testability,Test-pattern generation and fault simulation
+10010583_8,Fault models and test metrics,Test-pattern generation and fault simulation
+10010583_8,Memory test and repair,Test-pattern generation and fault simulation
+10010583_8,"Analog, mixed-signal and radio frequency test",Test-pattern generation and fault simulation
+10010583_8,Hardware reliability screening,Test-pattern generation and fault simulation
+10010583_8,Hardware test,Test-pattern generation and fault simulation
+10010583_8,Board- and system-level test,Test-pattern generation and fault simulation
+10010583_8,Built-in self-test,Test-pattern generation and fault simulation
+10010583_10,Emerging optical and photonic technologies,Emerging technologies
+10010583_10,Electromechanical systems,Emerging technologies
+10010583_10,Bio-embedded electronics,Emerging technologies
+10010583_10,Single electron devices,Emerging technologies
+10010583_10,Memory and dense storage,Emerging technologies
+10010583_10,Emerging tools and methodologies,Emerging technologies
+10010583_10,Circuit substrates,Emerging technologies
+10010583_10,Emerging languages and compilers,Emerging technologies
+10010583_10,Tunneling devices,Emerging technologies
+10010583_10,Emerging interfaces,Emerging technologies
+10010583_10,Cellular neural networks,Emerging technologies
+10010583_10,Quantum error correction and fault tolerance,Emerging technologies
+10010583_10,III-V compounds,Emerging technologies
+10010583_10,Analysis and design of emerging devices and systems,Emerging technologies
+10010583_10,Quantum dots and cellular automata,Emerging technologies
+10010583_10,Neural systems,Emerging technologies
+10010583_10,Superconducting circuits,Emerging technologies
+10010583_10,Emerging architectures,Emerging technologies
+10010583_10,Quantum technologies,Emerging technologies
+10010583_10,Quantum computation,Quantum technologies
+10010583_10,Spintronics and magnetic technologies,Emerging technologies
+10010583_10,Carbon based electronics,Emerging technologies
+10010583_10,Quantum communication and cryptography,Emerging technologies
+10010583_10,Flexible and printable circuits,Emerging technologies
+10010583_10,Microelectromechanical systems,Emerging technologies
+10010583_10,Emerging simulation,Emerging technologies
+10010583_10,Plasmonics,Emerging technologies
+10010583_10,Nanoelectromechanical systems,Emerging technologies
+10010583_10,Biology-related information processing,Emerging technologies
+10010583_10,Reversible logic,Emerging technologies.

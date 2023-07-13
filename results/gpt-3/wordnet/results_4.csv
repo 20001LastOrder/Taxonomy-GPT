@@ -1,0 +1,2093 @@
+group,child,parent
+647,bomb blast,blast
+647,backblast,blast
+647,airburst,blast
+647,big bang,blast
+647,blowback,blast
+647,backfire,blast
+647,inflation,blast
+647,fragmentation,blast
+647,nuclear explosion,explosion
+647,explosion,blast
+648,insanity,derangement
+648,lunacy,derangement
+648,craziness,derangement
+648,dementia,derangement
+648,senile dementia,dementia
+648,alcoholic dementia,dementia
+648,presenile dementia,dementia
+648,Alzheimer's disease,dementia
+648,Pick's disease,dementia
+648,irrationality,derangement
+649,diameter,bore
+649,elongation,length
+649,coextension,length
+649,windage,elongation
+649,shortness,length
+649,semidiameter,radius
+649,radius of curvature,radius
+649,extension,length
+649,circumference,diameter
+649,longness,length
+649,radius,length
+650,Medicare,health care program
+650,primary health care,type of health care
+650,disability insurance,type of social insurance
+650,survivors insurance,type of social insurance
+650,social welfare,type of relief
+650,unemployment compensation,type of relief
+650,Social Security,type of social insurance
+650,supplementary benefit,type of social welfare
+650,national insurance,type of social insurance
+650,Medicaid,type of health care program
+650,social insurance,type of social welfare
+650,relief,type of social welfare
+650,dole,type of relief
+650,old-age insurance,type of social insurance
+651,vambrace,armor plate
+651,cuisse,armor plate
+651,plastron,armor plate
+651,brassard,armor plate
+651,armet,helmet
+651,knee piece,armor plate
+651,basinet,helmet
+651,beaver,helmet
+651,backplate,armor plate
+651,morion,helmet
+651,helmet,armor plate
+651,casquet,helmet
+651,rerebrace,armor plate
+651,pickelhaube,helmet
+651,pallette,armor plate
+651,breastplate,armor plate
+651,visor,helmet
+651,cannon,armor plate
+651,cubitiere,armor plate
+651,heaume,helmet
+651,nosepiece,armor plate
+651,tuille,armor plate
+651,epauliere,armor plate
+651,fauld,armor plate
+651,skirt of tasses,armor plate
+651,sallet,helmet
+651,greave,armor plate
+651,tasset,armor plate
+651,casque,helmet
+651,roundel,armor plate
+651,solleret,armor plate
+651,chanfron,armor plate
+651,gorget,armor plate
+652,Sarcoscypha coccinea,Sarcosomataceae
+652,Galiella rufa,Sarcosomataceae
+652,Caloscypha fulgens,Sarcosomataceae
+652,Jafnea semitosta,Sarcosomataceae
+652,devil's cigar,Sarcosomataceae
+652,Rufous rubber cup,Sarcosomataceae
+652,Urnula craterium,Sarcosomataceae
+652,black felt cup,Sarcosomataceae
+652,winter urn,Sarcosomataceae
+652,blood cup,Clavicipitaceae
+652,Mitrula elegans,Clavicipitaceae
+652,soldier grainy club,Clavicipitaceae
+652,devil's urn,Clavicipitaceae
+652,grainy club,Clavicipitaceae
+652,charred pancake cup,Clavicipitaceae
+652,Leotia lubrica,Clavicipitaceae
+652,ascomycete,discomycete
+652,Peziza domicilina,discomycete
+652,Aleuria aurantia,discomycete
+653,piano lesson,music lesson
+653,violin lesson,music lesson
+653,tennis lesson,lesson
+653,lecture,lesson
+653,chalk talk,lesson
+653,dance lesson,lesson
+653,teaching,lesson
+653,German lesson,language lesson
+653,Hebrew lesson,language lesson
+653,French lesson,language lesson
+653,golf lesson,lesson
+653,inculcation,teaching
+653,phonics,teaching reading
+653,schooling,teaching
+653,brainwashing,indoctrination
+653,indoctrination,teaching
+653,catechesis,catechetical instruction
+653,catechetical instruction,teaching
+653,whole-word method,teaching reading
+653,tutelage,teaching
+653,spoonfeeding,teaching
+653,language teaching,teaching
+653,talk,lesson
+653,sleep-learning,teaching
+653,music lesson,lesson
+654,Coue,psychotherapist
+654,curandera,herbalist
+654,chiropractor,therapist
+654,curandero,herbalist
+654,masseuse,massager
+654,osteopath,therapist
+654,naprapath,therapist
+654,sangoma,herbalist
+654,electrotherapist,therapist
+654,masseur,massager
+654,alleviator,therapist
+654,naturopath,herbalist
+654,speech therapist,therapist
+654,physical therapist,therapist
+655,fesse,ordinary
+655,chevron,ordinary
+655,annulet,ordinary
+655,bend,ordinary
+655,quartering,coat of arms
+655,fleur-de-lis,charge
+655,coat of arms,heraldry
+655,bar sinister,charge
+656,Old Catholic Church,Catholic Church
+656,Orthodox Church,Eastern Church
+656,Uniat Church,Catholic Church
+656,Nestorian Church,Eastern Church
+656,Unification Church,Protestant Church
+656,Russian Orthodox Church,Orthodox Church
+656,Armenian Church,Eastern Church
+656,Pentecostal religion,Protestant Church
+656,Coptic Church,Eastern Church
+656,Greek Orthodox Church,Orthodox Church
+656,Catholic Church,Christian Church
+657,butter knife,cutlery
+657,teaspoon,spoon
+657,tablespoon,spoon
+657,soupspoon,spoon
+657,carving fork,fork
+657,runcible spoon,spoon
+657,tablefork,fork
+657,spoon,cutlery
+657,fork,cutlery
+657,dessert spoon,spoon
+657,salad fork,fork
+657,wooden spoon,spoon
+657,case knife,cutlery
+657,Spork,cutlery
+657,steak knife,cutlery
+657,sugar spoon,spoon
+657,fish knife,cutlery
+657,iced-tea spoon,spoon
+657,table knife,cutlery
+657,toasting fork,fork
+658,theme,part
+658,diminution,variation
+658,partita,part
+658,ground bass,bass
+658,swoop,glissando
+658,theme song,tune
+658,leitmotiv,motif
+658,statement,theme
+658,flourish,accompaniment
+658,variation,theme
+658,roulade,variation
+658,voice part,part
+658,primo,part
+658,signature,statement
+658,canto,voice part
+658,obbligato,accompaniment
+658,vamp,accompaniment
+658,secondo,part
+658,tune,motif
+658,figured bass,bass
+658,accompaniment,obbligato
+658,glissando,statement
+658,inversion,statement
+658,descant,part
+658,augmentation,variation
+659,diapason,organ stop
+659,organ pipe,flue pipe
+659,dulciana,flue stop
+659,reed pipe,reed stop
+659,flue stop,organ stop
+659,reed stop,organ stop
+659,vox angelica,organ stop
+659,vox humana,reed stop
+659,sourdine,organ stop
+660,obstructive shock,shock
+660,heatstroke,sunstroke
+660,cardiogenic shock,shock
+660,nervous breakdown,breakdown
+660,collapse,shock
+660,neurasthenia,nervous exhaustion
+660,heat exhaustion,breakdown
+660,hypovolemic shock,shock
+660,insulin shock,shock
+660,distributive shock,shock
+660,algidity,shock
+661,Napier's bones,scaler
+661,abacus,scaler
+661,quipu,scaler
+661,adding machine,calculator
+661,pulse counter,counter
+661,hand calculator,calculator
+661,subtracter,calculator
+661,adder,calculator
+661,counter,scaler
+662,artificial joint,implant
+662,penile implant,implant
+662,dental implant,implant
+662,glass eye,implant
+662,monofocal lens implant,lens implant
+662,breast implant,implant
+662,Jarvik heart,artificial heart
+662,lens implant,implant
+662,prosthesis,implant
+662,peg,implant
+662,obturator,implant
+662,shunt,implant
+662,accommodating lens implant,lens implant
+662,multifocal lens implant,lens implant
+662,heart valve,implant
+662,implant,prosthesis
+663,Boston bull,bullterrier
+663,Bedlington terrier,terrier
+663,Border terrier,terrier
+663,Yorkshire terrier,terrier
+663,cairn,terrier
+663,Dandie Dinmont,terrier
+663,Airedale,terrier
+663,Lhasa,terrier
+663,soft-coated wheaten terrier,terrier
+663,silky terrier,terrier
+663,wirehair,terrier
+663,wire-haired fox terrier,fox terrier
+663,smooth-haired fox terrier,fox terrier
+663,Skye terrier,terrier
+663,American Staffordshire terrier,bullterrier
+663,giant schnauzer,schnauzer
+663,Manchester terrier,terrier
+663,Clydesdale terrier,terrier
+663,Norwich terrier,terrier
+663,Lakeland terrier,terrier
+663,Sealyham terrier,terrier
+663,Staffordshire bullterrier,bullterrier
+663,Irish terrier,terrier
+663,rat terrier,terrier
+663,Welsh terrier,terrier
+663,standard schnauzer,schnauzer
+663,miniature schnauzer,schnauzer
+663,West Highland white terrier,terrier
+663,Scottish terrier,terrier
+663,Kerry blue terrier,terrier
+663,Norfolk terrier,terrier
+663,Tibetan terrier,terrier
+663,toy Manchester,Manchester terrier
+663,fox terrier,terrier
+663,schnauzer,terrier
+663,Australian terrier,terrier
+664,alabaster,calcite
+664,moonstone,feldspar
+664,Iceland spar,spar
+664,spar,calcite
+664,chalk,calcite
+664,orthoclase,feldspar
+664,plagioclase,feldspar
+664,albite,plagioclase
+664,feldspar,spar
+664,calcite,spar
+665,totalitarian state,state
+665,state government,government
+665,municipal government,local government
+665,Downing Street,government
+665,papacy,government
+665,state,government
+665,ancien regime,government
+665,empire,government
+665,Capital,government
+665,United States government,federal government
+665,commission plan,government
+665,bureaucracy,government
+665,local government,government
+665,Soviets,government
+665,Porte,government
+665,puppet government,government
+665,authoritarian state,government
+665,palace,government
+665,town meeting,government
+665,federal government,government
+665,military government,government
+665,Court of Saint James's,government
+665,government-in-exile,government
+665,court,government
+665,government,welfare state.
+666,splice,joint
+666,butt weld,weld
+666,junction barrier,junction
+666,tongue and groove joint,joint
+666,spot weld,weld
+666,distributor point,contact
+666,junction barrier,junction
+666,welt,seam
+666,strap hinge,hinge
+666,toggle joint,joint
+666,ball-and-socket joint,joint
+666,knuckle joint,joint
+666,scarf joint,joint
+666,rabbet joint,joint
+666,mortise joint,joint
+666,butt hinge,hinge
+666,lap joint,joint
+666,p-n junction,junction
+666,thermojunction,junction
+666,dovetail,joint
+666,butt joint,joint
+666,miter joint,joint
+666,electrical contact,contact
+667,thirst,dehydration
+667,hunger,undernourishment
+667,starvation,undernourishment
+667,dehydration,undernourishment
+667,hypoxia,suffocation
+667,anemic hypoxia,hypoxia
+667,anoxic hypoxia,hypoxia
+667,ischemic hypoxia,hypoxia
+667,anoxia,suffocation
+667,suffocation,deprivation
+667,emptiness,deprivation
+667,drive,sex drive
+667,edacity,hunger
+667,polydipsia,thirst
+667,bulimia,hunger
+667,altitude sickness,hypoxia
+667,mountain sickness,altitude sickness
+667,anemic anoxia,anoxia
+668,alpha radiation,radiation
+668,beta radiation,radiation
+668,neutron radiation,radiation
+668,corpuscular radiation,radiation
+668,emission,radiation
+668,secondary emission,emission
+668,photoelectric emission,emission
+668,thermionic emission,emission
+668,field emission,emission
+668,photoemission,emission
+669,federalization,union
+669,interconnection,connection
+669,junction,connection
+669,anastomosis,junction
+669,osculation,union
+669,coherence,consistency
+669,tangency,contact
+669,alliance,coalition
+669,continuity,connection
+669,syncretism,coherence
+669,connection,concatenation
+669,concatenation,connection
+669,contact,connection
+669,marriage,union
+669,association,connection
+669,synapse,junction
+669,neuromuscular junction,synapse
+669,consistency,coherence
+669,coalition,union
+670,baseball,ball game
+670,hardball,baseball
+670,softball,ball game
+670,steal,ball game
+670,rounders,ball game
+670,stickball,ball game
+670,professional baseball,baseball
+670,perfect game,no-hit game
+670,no-hit game,ball game
+670,one-hitter,no-hit game
+670,two-hitter,no-hit game
+670,three-hitter,no-hit game
+670,four-hitter,no-hit game
+670,five-hitter,no-hit game
+670,daisy cutter,ball
+670,ball,ball game
+671,forehand drive,drive
+671,backhand drive,drive
+671,drive,tennis stroke
+671,lob,ground stroke
+671,ground stroke,tennis stroke
+671,volley,tennis stroke
+671,drop shot,ground stroke
+671,overhead,tennis stroke
+671,passing shot,ground stroke
+671,half volley,ground stroke
+671,ace,serve
+671,serve,tennis stroke
+671,footfault,fault
+671,fault,tennis stroke
+671,let,tennis stroke
+671,return,tennis stroke
+671,get,tennis stroke
+671,chop,ground stroke
+671,two-handed backhand,backhand
+671,forehand,tennis stroke
+671,backhand,tennis stroke
+671,double fault,fault
+672,stigmatism,visual modality
+672,monocular vision,visual modality
+672,eyesight,visual modality
+672,acuity,visual modality
+672,peripheral vision,visual modality
+672,foveal vision,visual modality
+672,distance vision,visual modality
+672,central vision,visual modality
+672,oxyopia,visual modality
+672,twenty-twenty,visual modality
+672,color vision,visual modality
+672,sight,visual modality
+672,binocular vision,visual modality
+672,night vision,visual modality
+672,absolute pitch,hearing modality
+672,stereoscopic vision,visual modality
+672,ear,hearing modality
+672,kinesthesia,somatosense modality
+672,near vision,visual modality
+672,daylight vision,visual modality
+672,achromatic vision,visual modality
+672,nose,smell modality
+672,taste,modality
+672,somatosense,touch modality
+672,hearing,modality
+672,smell,modality
+673,chlordiazepoxide,benzodiazepine
+673,alprazolam,benzodiazepine
+673,diazepam,benzodiazepine
+673,lorazepam,benzodiazepine
+673,oxazepam,benzodiazepine
+673,temazepam,benzodiazepine
+673,nitrazepam,benzodiazepine
+673,estazolam,benzodiazepine
+673,flurazepam,benzodiazepine
+673,hydroxyzine hydrochloride,tranquilizer
+673,prochlorperazine,tranquilizer
+673,diphenylbutyl piperidine,tranquilizer
+673,triazolam,benzodiazepine
+673,midazolam,benzodiazepine
+673,major tranquilizer,tranquilizer
+673,minor tranquilizer,tranquilizer
+673,perphenazine,tranquilizer
+673,thiothixene,tranquilizer
+673,molindone,tranquilizer
+673,haloperidol,tranquilizer
+673,fluphenazine,tranquilizer
+673,loxapine,tranquilizer
+673,pimozide,tranquilizer
+673,chlorpromazine,tranquilizer
+673,thioridazine,tranquilizer
+673,clozapine,tranquilizer
+673,buspirone,tranquilizer
+673,lithium carbonate,tranquilizer
+673,meprobamate,tranquilizer
+674,Weizenbier,Weissbier
+674,bitter,ale
+674,bock,beer
+674,stout,beer
+674,Munich beer,beer
+674,light beer,beer
+674,Pilsner,lager
+674,porter,beer
+674,pale ale,ale
+674,Guinness,stout
+674,draft beer,beer
+674,Oktoberfest,beer
+674,Weizenbock,bock
+674,malt,beer
+674,suds,beer
+674,Burton,beer
+675,Gestapo,secret police
+675,gendarmerie,police
+675,Europol,law enforcement agency
+675,Criminal Investigation Command,law enforcement agency
+675,Mutawa'een,law enforcement agency
+675,Scotland Yard,law enforcement agency
+675,United States Marshals Service,law enforcement agency
+675,Federal Law Enforcement Training Center,law enforcement agency
+675,Federal Bureau of Prisons,law enforcement agency
+675,Financial Crimes Enforcement Network,law enforcement agency
+675,Federal Judiciary,law enforcement agency
+675,Federal Bureau of Investigation,law enforcement agency
+675,Bureau of Alcohol Tobacco and Firearms,law enforcement agency
+675,Drug Enforcement Administration,law enforcement agency
+675,posse,law enforcement agency
+675,National Institute of Justice,law enforcement agency
+675,Royal Canadian Mounted Police,law enforcement agency
+675,Schutzstaffel,law enforcement agency
+676,curvaceousness,beauty
+676,sex appeal,appeal
+676,spiff,pleasingness
+676,bewitchery,sultriness
+676,exquisiteness,beauty
+676,picturesqueness,attractiveness
+676,adorability,pleasingness
+676,charisma,appeal
+676,prettiness,attractiveness
+676,sultriness,sex appeal
+676,glory,beauty
+676,glamor,attractiveness
+676,raw beauty,beauty
+676,pulchritude,beauty
+676,siren call,appeal
+676,winsomeness,pleasingness
+676,handsomeness,beauty
+676,comeliness,attractiveness
+677,Kropotkin,anarchist
+677,sleeper,terrorist
+677,Girondist,Jacobin
+677,Trotskyite,Bolshevik
+677,Trotsky,Bolshevik
+677,Guevara,revolutionary
+677,kamikaze,suicide bomber
+677,Danton,Jacobin
+677,Mao,revolutionary
+677,Wallace,counterrevolutionist
+677,Marat,Jacobin
+677,anarchist,extremist
+677,hacker,extremist
+677,Zapata,revolutionary
+677,Turner,mutineer
+677,Vanzetti,anarchist
+677,counterrevolutionist,revolutionary
+677,Robespierre,Jacobin
+677,leveler,revolutionary
+677,Villa,revolutionary
+677,Sacco,anarchist
+677,Young Turk,insurgent
+677,Young Turk,radical
+677,Jacobin,revolutionary
+677,terrorist,extremist
+677,Bakunin,anarchist
+677,Corday,counterrevolutionist
+677,Marti,revolutionary
+677,Mirabeau,Jacobin
+677,Goldman,anarchist
+677,Zhou En-lai,revolutionary
+677,Jaffar,revolutionary
+678,endorsement,backing
+678,glorification,sentimentalization
+678,reward,blessing
+678,embrace,adoption
+678,idealization,sentimentalization
+678,admiration,adoration
+678,carrot,reward
+678,adoration,blessing
+678,backing,support
+678,sentimentalization,idealization
+678,adoption,blessing
+679,thioguanine,antimetabolite
+679,periwinkle plant derivative,antineoplastic
+679,lomustine,alkylating agent
+679,asparaginase,antineoplastic
+679,mercaptopurine,antimetabolite
+679,procarbazine,alkylating agent
+679,methotrexate,antimetabolite
+679,vinblastine,antineoplastic
+679,antimetabolite,antineoplastic
+679,antineoplastic,cytotoxic drug
+679,antineoplastic antibiotic,antineoplastic
+679,fluorouracil,antimetabolite
+679,chlorambucil,alkylating agent
+679,melphalan,alkylating agent
+679,vincristine,antineoplastic
+679,mithramycin,antineoplastic
+679,cytotoxic drug,antineoplastic
+679,floxuridine,antimetabolite
+679,thiotepa,alkylating agent
+680,anthozoan,sea anemone
+680,coral,anthozoan
+680,stony coral,coral
+680,gorgonian,sea fan
+680,brain coral,stony coral
+680,sea pen,anthozoan
+680,red coral,stony coral
+680,sea feather,gorgonian
+680,mushroom coral,stony coral
+680,sea fan,gorgonian
+680,actinia,sea anemone
+680,staghorn coral,stony coral
+681,psychoanalysis,psychotherapy
+681,crisis intervention,therapy
+681,desensitization technique,exposure therapy
+681,aversion therapy,behavior therapy
+681,reciprocal inhibition,behavior therapy
+681,family therapy,psychotherapy
+681,exposure therapy,behavior therapy
+681,client-centered therapy,psychotherapy
+681,hypnotherapy,therapy
+681,behavior therapy,psychotherapy
+681,self-analysis,psychotherapy
+681,token economy,therapy
+681,assertiveness training,therapy
+681,psychotherapy,therapy
+681,group therapy,therapy
+681,play therapy,therapy
+681,hypnoanalysis,psychoanalysis
+681,implosion therapy,behavior therapy
+682,cyanide process,industrial process
+682,fractional distillation,industrial process
+682,fractionation,industrial process
+682,Solvay process,industrial process
+682,Acheson process,industrial process
+682,destructive distillation,industrial process
+682,Haber process,industrial process
+682,carbonization,industrial process
+682,Bessemer process,industrial process
+682,electrostatic precipitation,industrial process
+683,collision,accident
+683,smash,collision
+683,injury,consequence of collision
+683,shipwreck,collision
+683,collateral damage,consequence of collision
+683,crash,collision
+683,prang,collision
+683,fender-bender,collision
+683,pileup,collision
+683,capsizing,collision
+683,fatal accident,accident
+683,dismemberment,injury
+683,concussion,injury
+683,mutilation,injury
+684,bend,section
+684,straightaway,stretch
+684,hairpin bend,bend
+684,homestretch,stretch
+684,elbow,bend
+684,length,section
+684,leaf,subsection
+684,blind curve,bend
+684,drop-leaf,leaf
+684,subsection,section
+685,bohemianism,behavior
+685,insolence,behavior
+685,snub,insult
+685,discourtesy,indelicacy
+685,the way of the world,behavior
+685,aggression,behavior
+685,presumption,behavior
+685,bitchery,indelicacy
+685,dirty tricks,dirty pool
+685,insult,indignity
+685,raising hell,behavior
+685,dirty pool,behavior
+685,mock,behavior
+685,last straw,aggravation
+685,terrorization,behavior
+685,twit,behavior
+685,derision,behavior
+685,self-assertion,behavior
+685,rebuff,behavior
+685,easiness,behavior
+685,scandalization,behavior
+685,aggro,aggression
+685,silent treatment,behavior
+685,bullying,terrorization
+685,behavior,way of the world
+686,butcher,killer
+686,ripper,killer
+686,garroter,killer
+686,headsman,killer
+686,hatchet man,killer
+686,matricide,killer
+686,suicide,killer
+686,assassin,killer
+686,murderer,killer
+686,exterminator,killer
+686,executioner,killer
+686,poisoner,killer
+686,patricide,killer
+686,mass murderer,killer
+686,electrocutioner,killer
+686,infanticide,killer
+686,gunman,killer
+686,cutthroat,killer
+686,spree killer,killer
+686,fratricide,killer
+686,parricide,killer
+686,regicide,killer
+686,hangman,killer
+686,murderess,killer
+686,serial killer,killer
+686,Jack the Ripper,killer
+686,Booth,killer
+686,Oswald,killer
+687,frontiersman,settler
+687,Boone,frontiersman
+687,Crockett,frontiersman
+687,Bowie,frontiersman
+687,Carson,frontiersman
+687,bushman,frontiersman
+687,Burk,frontiersman
+687,sourdough,pioneer
+687,Pilgrim,settler
+687,squatter,settler
+687,frontierswoman,settler
+687,pioneer,settler
+687,Minuit,settler
+687,Chapman,settler
+687,Standish,settler
+687,Hutchinson,settler
+687,Endecott,settler
+687,Winslow,settler
+687,Williams,settler
+688,vomitory,gateway
+688,stage door,doorway
+688,exterior door,doorway
+688,back door,doorway
+688,service door,doorway
+688,hatchway,doorway
+688,front door,doorway
+688,entrance,doorway
+688,pithead,gateway
+688,Dutch door,doorway
+688,side door,exterior door
+688,portal,gateway
+688,escape hatch,hatchway
+688,porte-cochere,gateway
+688,arch,gateway
+689,classical style,artistic style
+689,neoclassicism,classical style
+689,classicism,classical style
+689,Romanticism,artistic style
+689,baroque,artistic style
+689,High Renaissance,artistic style
+689,rococo,artistic style
+689,Corinthian order,order
+689,Doric order,order
+689,Ionic order,order
+689,Tuscan order,order
+689,Composite order,order
+689,order,setup
+689,setup,form
+689,form,treatment
+689,treatment,response
+689,response,touch
+689,common touch,touch
+689,fit,drape
+689,drape,hang
+689,hang,manner
+689,life style,manner
+689,vanity fair,fast lane
+689,free living,life style
+690,dugout canoe,small boat
+690,kayak,small boat
+690,gig,small boat
+690,scull,racing boat
+690,shell,racing boat
+690,racing gig,gig
+690,canoe,small boat
+690,racing skiff,skiff
+690,yawl,small boat
+690,dinghy,small boat
+690,jolly boat,small boat
+690,cockleshell,small boat
+690,outrigger canoe,canoe
+690,birchbark canoe,canoe
+690,wherry,small boat
+690,coracle,small boat
+690,sampan,small boat
+690,racing boat,small boat
+691,child abuse,maltreatment
+691,torture,cruelty
+691,outrage,atrocity
+691,oppression,cruelty
+691,burning,cruelty
+691,persecution,oppression
+691,picket,protest
+691,judicial torture,torture
+691,child neglect,maltreatment
+691,pogrom,persecution
+691,boot,instrument
+691,nail pulling,torture
+691,strappado,torture
+691,sleep deprivation,torture
+691,kittee,torture
+691,bastinado,torture
+691,brutality,cruelty
+691,sensory deprivation,torture
+691,dismemberment,cruelty
+691,impalement,cruelty
+691,kia quen,torture
+691,burning,cruelty
+691,prolonged interrogation,torture
+691,electric shock,torture
+691,genital torture,torture
+691,crucifixion,torture
+691,enormity,cruelty
+691,rack,torture
+691,rendition,torture
+692,manure,fertilizer
+692,cow manure,manure
+692,bonemeal,fertilizer
+692,chicken manure,manure
+692,fish meal,fertilizer
+692,horse manure,manure
+692,guano,fertilizer
+692,green manure,fertilizer
+692,neem cake,fertilizer
+692,night soil,manure
+693,geometry,branch of pure mathematics
+693,arithmetic,branch of pure mathematics
+693,algebra,branch of pure mathematics
+693,analysis,branch of pure mathematics
+693,set theory,branch of pure mathematics
+693,metamathematics,branch of pure mathematics
+693,geometry,branch of mathematics
+693,algebra,branch of mathematics
+693,analysis,branch of mathematics
+693,set theory,branch of mathematics
+693,calculus,branch of mathematics
+693,trigonometry,branch of mathematics
+693,linear algebra,branch of mathematics
+693,numerical analysis,branch of mathematics
+693,topology,branch of mathematics
+693,Galois theory,branch of mathematics
+693,quadratics,branch of mathematics
+693,Fourier analysis,branch of mathematics
+693,projective geometry,branch of geometry
+693,elliptic geometry,branch of non-Euclidean geometry
+693,hyperbolic geometry,branch of non-Euclidean geometry
+693,spherical geometry,branch of non-Euclidean geometry
+693,plane geometry,branch of Euclidean geometry
+693,solid geometry,branch of Euclidean geometry
+693,affine geometry,branch of Euclidean geometry
+693,elementary geometry,branch of Euclidean geometry
+693,fractal geometry,branch of geometry
+693,spherical trigonometry,branch of trigonometry
+693,calculus of variations,branch of calculus
+693,differential calculus,branch of calculus
+693,integral calculus,branch of calculus
+693,vector algebra,branch of algebra
+693,matrix algebra,branch of algebra
+693,group theory,branch of algebra
+693,triangulation,branch of geometry
+693,analytic geometry,branch of geometry
+693,decomposition,concept in algebra
+694,depth gauge,gauge
+694,strain gauge,gauge
+694,water gauge,gauge
+694,pressure gauge,gauge
+694,surface gauge,gauge
+694,gasoline gauge,gauge
+694,rain gauge,gauge
+694,wire gauge,gauge
+694,vacuum gauge,gauge
+694,manometer,gauge
+694,dipstick,gauge
+694,tensimeter,gauge
+694,anemometer,gauge
+694,water level,gauge
+694,sphygmomanometer,gauge
+695,nosedive,decline
+695,slump,decline
+695,loss,decline
+695,sinking spell,decline
+695,deterioration,decline
+695,decline,reduction
+695,slippage,decline
+695,erosion,decline
+695,ebb,decline
+695,detumescence,decline
+695,reducing,decline
+695,epilation,decline
+695,psilosis,decline.
+696,quota,trade barrier
+696,embargo,trade barrier
+696,protectionism,economic policy
+696,perestroika,economic policy
+696,New Deal,economic policy
+696,fiscal policy,economic policy
+696,trade barrier,control
+696,price control,control
+696,glass ceiling,ceiling
+696,wage floor,floor
+696,price floor,floor
+696,control,economic policy
+696,ceiling,price control
+696,floor,price control
+696,economic policy,control
+697,glow,type of light
+697,bioluminescence,type of glow
+697,fluorescence,type of glow
+697,incandescence,type of glow
+697,torchlight,type of light
+697,infrared ray,type of light
+697,candlelight,type of light
+697,lamplight,type of light
+697,sunlight,type of light
+697,moonlight,type of light
+697,firelight,type of light
+697,laser beam,type of light
+697,streamer,type of light
+697,sunburst,type of light
+697,high beam,type of light
+697,gaslight,type of light
+697,starlight,type of light
+697,radiance,type of light
+697,twilight,type of light
+697,scintillation,type of light
+697,corona,type of light
+697,sky glow,type of light
+697,aureole,type of light
+697,half-light,type of light
+697,phosphorescence,type of light
+697,low beam,type of light
+697,beam,type of light
+697,luminescence,type of light
+697,heat ray,type of light
+697,moonbeam,type of light
+697,friar's lantern,type of light
+697,counterglow,type of light
+697,autofluorescence,type of fluorescence
+697,meteor,type of light
+697,bolide,type of light
+697,chemiluminescence,type of luminescence
+698,handstand,gymnastic exercise
+698,double leg circle,gymnastic exercise
+698,scissors,gymnastic exercise
+698,kip,gymnastic exercise
+698,piked reverse hang,hang
+698,lever hang,hang
+698,bent hang,hang
+698,reverse hang,hang
+698,straight hang,hang
+698,crucifix,hang
+698,grand circle,long fly
+698,inverted hang,hang
+698,long fly,hang
+698,dip,hang
+698,straddle,hang
+699,linear equation,mathematical statement
+699,equation,mathematical statement
+699,quadratic equation,equation
+699,biquadratic equation,quadratic equation
+699,differential equation,equation
+699,Schrodinger equation,differential equation
+699,simultaneous equations,equation
+699,primitive,mathematical statement
+699,formula,mathematical statement
+699,exponential equation,equation
+699,exponential expression,mathematical statement
+699,partial differential equation,differential equation
+699,regression equation,equation
+699,wave equation,differential equation
+699,Maxwell's equations,equation
+699,sentential function,mathematical statement.
+700,ruin,deterioration
+700,decay,deterioration
+700,devastation,deterioration
+700,wear,deterioration
+700,decomposition,deterioration
+700,blight,deterioration
+700,fragmentation,deterioration
+700,putrefaction,deterioration
+700,corrosion,deterioration
+700,putrescence,deterioration
+700,decrepitude,deterioration
+700,rancidity,deterioration
+701,corn,grain
+701,millet,grain
+701,barley,grain
+701,oat,grain
+701,rice,grain
+701,wheat,grain
+701,groats,grain
+701,paddy,grain
+701,bulgur,grain
+701,pearl barley,barley
+701,brown rice,rice
+701,wild rice,rice
+701,white rice,rice
+701,cracked wheat,wheat
+701,buckwheat,grain
+701,grist,grain
+701,pearl hominy,hominy
+701,lye hominy,hominy
+701,sweet corn,corn
+701,popcorn,corn
+701,hominy,corn
+701,malt,grain
+701,wort,malt
+702,laser-guided bomb,bomb
+702,fragmentation bomb,bomb
+702,incendiary bomb,bomb
+702,smart bomb,bomb
+702,depth charge,bomb
+702,car bomb,bomb
+702,smoke bomb,bomb
+702,time bomb,bomb
+702,hydrogen bomb,bomb
+702,gas shell,bomb
+702,dirty bomb,bomb
+702,chemical bomb,bomb
+702,balloon bomb,bomb
+702,dumb bomb,bomb
+702,letter bomb,bomb
+702,Bunker Buster,bomb
+702,atom bomb,bomb
+702,microwave bomb,bomb
+702,stink bomb,bomb
+702,plastic bomb,bomb
+702,cluster bomb,bomb
+702,megaton bomb,bomb
+702,remote-control bomb,bomb
+702,thermobaric bomb,bomb
+702,penetration bomb,bomb
+702,general-purpose bomb,bomb
+702,grenade,bomb
+702,rifle grenade,bomb
+702,hand grenade,bomb
+702,bombie,bomb
+702,bombshell,bomb
+702,neutron bomb,bomb
+702,clean bomb,bomb
+703,tortilla chip,chip
+703,corn chip,chip
+703,nacho,tortilla chip
+703,potato skin,snack food
+703,wrap,sandwich
+703,open-face sandwich,sandwich
+703,sandwich,snack food
+703,ham sandwich,sandwich
+703,club sandwich,sandwich
+703,bacon-lettuce-tomato sandwich,sandwich
+703,hamburger,sandwich
+703,cheeseburger,hamburger
+703,tunaburger,hamburger
+703,gyro,sandwich
+703,chili dog,hotdog
+703,hotdog,sandwich
+703,western,sandwich
+703,butty,sandwich
+703,chicken sandwich,sandwich
+703,bomber,sandwich
+703,Sloppy Joe,sandwich
+703,Reuben,sandwich
+704,Sioux,Dakota
+704,Dakota,Sihasapa
+704,Sioux,Oglala
+704,Sioux,Hunkpapa
+704,Sioux,Teton
+704,Hidatsa,Dakota
+704,Omaha,Dhegiha
+704,Kansa,Dhegiha
+704,Osage,Dhegiha
+704,Iowa,Dhegiha
+704,Missouri,Dhegiha
+704,Biloxi,Siouan
+704,Ofo,Siouan
+704,Tutelo,Siouan
+704,Winnebago,Siouan
+704,Ponca,Siouan
+704,Crow,Siouan
+704,Quapaw,Siouan
+704,Catawba,Siouan
+704,Oto,Siouan
+704,Rain-in-the-Face,Sioux
+704,Red Cloud,Sioux
+704,Crazy Horse,Sioux
+704,Sitting Bull,Sioux
+705,cork,plug
+705,tampion,plug
+705,breechblock,plug
+705,drainplug,plug
+705,earplug,plug
+705,tampon,plug
+705,vapor lock,blockage
+705,bung,plug
+705,Tampax,tampon
+705,blockage,plug
+705,tap,plug
+705,fipple,plug
+706,Hadrian's Wall,wall
+706,sidewall,wall
+706,cavity wall,wall
+706,bell gable,gable
+706,bearing wall,wall
+706,proscenium,screen
+706,parapet,wall
+706,Wailing Wall,wall
+706,brattice,screen
+706,partition,wall
+706,gable,wall
+706,pediment,gable
+706,corbie gable,gable
+706,firewall,wall
+706,attic,wall
+706,rood screen,screen
+706,altarpiece,screen
+706,bulkhead,wall
+706,chimney breast,wall
+706,wainscoting,wall
+706,screen,wall
+706,purdah,partition
+707,cowpea,legume
+707,field pea,legume
+707,chickpea,legume
+707,pea,legume
+707,pod,pea
+707,peanut,legume
+707,cowage,legume
+707,legume,plant
+707,okra,plant
+707,loment,pod
+707,screw bean,pod
+707,lentil,legume
+707,garden pea,pea
+708,general anesthesia,anesthesia
+708,regional anesthesia,anesthesia
+708,local anesthesia,anesthesia
+708,topical anesthesia,anesthesia
+708,cryoanesthesia,anesthesia
+708,conduction anesthesia,regional anesthesia
+708,epidural anesthesia,regional anesthesia
+708,spinal anesthesia,regional anesthesia
+708,acroanesthesia,regional anesthesia
+708,caudal anesthesia,regional anesthesia
+708,pudendal block,regional anesthesia
+708,paracervical block,regional anesthesia
+708,twilight sleep,general anesthesia
+708,inhalation anesthesia,general anesthesia
+708,saddle block anesthesia,regional anesthesia
+709,diode,semiconductor device
+709,transistor,semiconductor device
+709,biochip,semiconductor device
+709,thermistor,semiconductor device
+709,microprocessor,semiconductor device
+709,field-effect transistor,transistor
+709,gene chip,biochip
+709,memory chip,semiconductor device
+709,light-emitting diode,diode
+709,organic light-emitting diode,light-emitting diode
+709,p-n-p transistor,transistor
+709,read-only memory chip,memory chip
+709,chip,semiconductor device
+709,n-type semiconductor,semiconductor device
+709,p-type semiconductor,semiconductor device
+710,bolo tie,neckwear
+710,neckcloth,neckwear
+710,cravat,neckwear
+710,necktie,neckwear
+710,string tie,neckwear
+710,four-in-hand,necktie
+710,old school tie,necktie
+710,Windsor tie,necktie
+710,black tie,necktie
+710,white tie,necktie
+710,ascot,necktie
+710,bow tie,necktie
+711,sandglass,timepiece
+711,analog watch,watch
+711,stopwatch,timer
+711,egg timer,timer
+711,time clock,clock
+711,pendulum watch,watch
+711,turret clock,clock
+711,digital clock,clock
+711,water clock,clock
+711,alarm clock,clock
+711,stem-winder,pocket watch
+711,analog clock,clock
+711,caesium clock,atomic clock
+711,cuckoo clock,clock
+711,pendulum clock,clock
+711,hunter,pocket watch
+711,Big Ben,clock
+711,wristwatch,watch
+711,atomic clock,system clock
+711,timepiece,clock
+711,parking meter,timer
+711,digital watch,watch
+711,Grandfather clock,clock
+711,sundial,clock
+711,chronograph,watch
+711,chronometer,watch
+711,ammonia clock,clock
+711,pocket watch,watch
+711,wall clock,clock
+712,divestiture,court order
+712,subpoena duces tecum,subpoena
+712,parking ticket,citation
+712,speeding ticket,citation
+712,writ of right,writ
+712,attachment,court order
+712,ticket,citation
+712,bench warrant,warrant
+712,writ of election,writ
+712,sequestration,court order
+712,search warrant,warrant
+712,writ of error,writ
+712,subpoena,court order
+712,reprieve,court order
+712,writ of prohibition,writ
+712,writ of detinue,writ
+712,garnishment,court order
+712,commutation,court order
+712,death warrant,warrant
+712,fieri facias,writ
+712,summons,court order
+712,interdict,court order
+712,writ of election,writ
+712,mandamus,court order
+712,writ of election,writ
+712,writ of prohibition,writ
+712,writ of election,writ
+712,writ,court order
+712,habeas corpus,writ
+712,certiorari,writ
+712,monition,court order
+712,cachet,court order
+713,nebula,diffuse nebula
+713,cosmic dust,nebula
+713,haze,fog
+713,ice fog,fog
+713,mushroom,cloud
+713,dust cloud,nebula
+713,gun smoke,aerosol
+713,smother,fog
+713,mist,fog
+713,fogbank,fog
+713,smother,haze
+713,pea soup,fog
+713,aerosol,cosmic dust
+713,coma,nebula
+713,cloud,nebula
+713,planetary nebula,nebula
+714,thing,concept
+714,grail,thing
+714,end-all,goal
+714,business,thing
+714,no-goal,concept
+714,bourn,destination
+714,mind,concept
+714,view,concept
+714,sake,purpose
+714,goal,purpose
+714,point,purpose
+714,purpose,concept
+714,destination,concept
+714,will,intention
+714,final cause,intention
+714,aim,goal
+714,cross-purpose,intention
+714,intention,concept
+714,occasions,concept
+715,blind,window blind
+715,curtain,window blind
+715,theater curtain,curtain
+715,drop curtain,theater curtain
+715,safety curtain,theater curtain
+715,frontal,curtain
+715,portiere,curtain
+715,winker,curtain
+715,Venetian blind,blind
+715,jalousie,blind
+715,roller blind,blind
+715,shower curtain,curtain
+715,festoon,curtain
+715,shutter,blind
+715,window shade,blind
+715,deadlight,blind
+716,etiology,factor
+716,intrinsic factor,factor
+716,growth hormone-releasing factor,releasing factor
+716,insertional mutagenesis,mutagenesis
+716,cause,antecedent
+716,producer,fundamental
+716,factor,parameter
+716,unknown quantity,wild card
+717,Grimm's law,sound law
+717,Verner's law,sound law
+717,conservation of energy,conservation
+717,conservation of mass,conservation
+717,conservation of momentum,conservation
+717,conservation of charge,conservation
+717,divine law,law
+717,pleasure principle,principle
+717,reality principle,principle
+717,fundamentals,principle
+717,insurrectionism,principle
+717,Tao,principle
+717,logic,principle
+717,parity,principle
+717,rudiment,principle
+717,dictate,law
+717,law,principle
+718,vermillion rockfish,rockfish
+718,copper rockfish,rockfish
+718,lumpsucker,lumpfish
+718,lionfish,scorpionfish
+718,plumed scorpionfish,scorpionfish
+718,tub gurnard,gurnard
+718,sea raven,sculpin
+718,armored searobin,sea robin
+718,pogge,sculpin
+718,bullhead,sculpin
+718,flying gurnard,gurnard
+718,snailfish,scorpaenoid
+718,lingcod,rockfish
+718,gurnard,scorpaenoid
+718,greenling,scorpaenoid
+718,sculpin,scorpaenoid
+718,sea robin,scorpaenoid
+718,miller's-thumb,sculpin
+718,grubby,sculpin
+718,poacher,sculpin
+718,scorpaenid,scorpaenoid
+718,flathead,scorpaenoid
+718,alligatorfish,scorpionfish
+718,kelp greenling,greenling
+718,stonefish,scorpionfish
+718,red rockfish,rockfish
+718,northern sea robin,sea robin
+718,painted greenling,greenling
+718,rosefish,scorpionfish
+719,low-warp-loom,loom
+719,spinning jenny,spinning machine
+719,high-warp loom,loom
+719,power loom,loom
+719,carpet loom,loom
+719,spinning wheel,textile machine
+719,throstle,spinning machine
+719,figure loom,loom
+719,handloom,loom
+719,Jacquard loom,loom
+719,spinning frame,spinning machine
+719,knitting machine,textile machine
+719,serger,sewing machine
+719,willow,textile machine
+720,paralysis agitans,brain disorder
+720,psychomotor epilepsy,epilepsy
+720,musicogenic epilepsy,epilepsy
+720,aphasia,agnosia
+720,global aphasia,aphasia
+720,posttraumatic epilepsy,epilepsy
+720,apraxia,agnosia
+720,procursive epilepsy,epilepsy
+720,transcortical aphasia,aphasia
+720,myoclonus epilepsy,epilepsy
+720,reflex epilepsy,epilepsy
+720,agraphia,agnosia
+720,nominal aphasia,aphasia
+720,sensory epilepsy,epilepsy
+720,astereognosis,agnosia
+720,petit mal epilepsy,epilepsy
+720,Wernicke's encephalopathy,brain disorder
+720,auditory aphasia,aphasia
+720,conduction aphasia,aphasia
+720,auditory agnosia,agnosia
+720,akinetic epilepsy,epilepsy
+720,Reye's syndrome,brain disorder
+720,Jacksonian epilepsy,epilepsy
+720,Wernicke's aphasia,aphasia
+720,agnosia,brain disorder
+720,Creutzfeldt-Jakob disease,brain disorder
+720,visual aphasia,aphasia
+720,grand mal epilepsy,epilepsy
+720,cerebral palsy,brain disorder
+720,cortical epilepsy,epilepsy
+720,photogenic epilepsy,epilepsy
+720,acataphasia,aphasia
+720,motor aphasia,aphasia
+720,epilepsy,brain disorder
+720,visual agnosia,agnosia
+720,tonic epilepsy,epilepsy
+720,status epilepticus,epilepsy.
+721,bassoon,double-reed instrument
+721,English horn,oboe
+721,oboe,double-reed instrument
+721,shawm,double-reed instrument
+721,oboe d'amore,oboe
+721,musette pipe,shawm
+721,heckelphone,bassoon
+721,oboe da caccia,oboe
+721,bombardon,double-reed instrument
+721,contrabassoon,bassoon
+721,tenoroon,bassoon
+721,krummhorn,shawm
+722,wedding reception,reception
+722,bachelor party,stag party
+722,slumber party,party
+722,shower,party
+722,garden party,party
+722,dinner,party
+722,housewarming,party
+722,musical soiree,soiree
+722,levee,reception
+722,beanfeast,party
+722,hen party,party
+722,masked ball,ball
+722,at home,party
+722,tea,party
+722,open house,party
+722,dance,party
+722,banquet,party
+722,masquerade,party
+722,shindig,party
+722,sociable,party
+722,ball,party
+722,soiree,party
+722,reunion,party
+723,sight,visual percept
+723,view,visual field
+723,background,field
+723,foreground,field
+723,middle distance,field
+723,side view,view
+723,tableau,sight
+723,exposure,sight
+723,glimpse,sight
+723,eye candy,sight
+723,microscopic field,field
+723,operative field,field
+723,visual field,field
+723,coast,view
+724,filter,general concept
+724,light filter,filter
+724,oil filter,filter
+724,drain basket,filter
+724,riddle,filter
+724,sifter,filter
+724,sieve,filter
+724,air filter,filter
+724,filter bed,filter
+724,filter tip,filter
+724,water filter,filter
+724,glass wool,filter
+724,strainer,filter
+724,fuel filter,filter
+724,colander,filter
+724,diatomaceous earth,filter
+724,coffee filter,filter
+724,tea-strainer,filter
+724,bacteria bed,filter
+725,accounting,review
+725,entry,accounting
+725,debit,entry
+725,credit,entry
+725,control account,account
+725,payroll,account
+725,inventory,account
+725,adjusting entry,entry
+725,cash basis,accounting
+725,limited audit,financial audit
+725,audited account,financial audit
+725,accrual basis,accounting
+725,analytical review,financial audit
+725,register,account
+725,credit side,account
+725,debit side,account
+725,pooling of interest,accounting
+726,taper,point
+726,occipital protuberance,bulge
+726,salient,point
+726,corrugation,ridge
+726,nub,point
+726,spur,point
+726,head,point
+726,umbo,nub
+726,frontal eminence,bulge
+726,snag,nub
+726,jag,point
+726,node,nub
+726,ridge,corrugation
+726,bulge,convex shape
+726,tail,taper
+726,mogul,bulge
+726,raphe,ridge
+726,wart,nub
+726,projection,point
+726,camber,convex shape
+726,cusp,point
+726,keel,ridge
+726,belly,bulge
+726,palatine raphe,raphe
+726,entasis,taper
+726,widow's peak,point
+726,tongue,point
+726,caput,head
+727,fault,crack
+727,crevasse,crack
+727,crack,fault
+727,vent,crack
+727,split,crack
+727,slit,crack
+727,fatigue crack,crack
+727,inclined fault,fault
+727,normal fault,fault
+727,thrust fault,fault
+727,strike-slip fault,fault
+727,San Andreas Fault,strike-slip fault
+727,Denali Fault,strike-slip fault
+727,chink,crack
+727,chap,crack
+727,rift,fault
+728,thesaurus,wordbook
+728,wordbook,dictionary
+728,pocket dictionary,dictionary
+728,learner's dictionary,dictionary
+728,bilingual dictionary,dictionary
+728,unabridged dictionary,dictionary
+728,desk dictionary,dictionary
+728,word finder,dictionary
+728,etymological dictionary,dictionary
+728,spell-checker,dictionary
+728,glossary,dictionary
+728,vocabulary,wordbook
+728,onomasticon,dictionary
+728,Oxford English Dictionary,unabridged dictionary
+728,gazetteer,dictionary
+729,stepdaughter,stepchild
+729,godson,godchild
+729,small-for-gestational-age infant,low-birth-weight baby
+729,liveborn infant,neonate
+729,daughter,female offspring
+729,Junior,child
+729,blue baby,liveborn infant
+729,goddaughter,godchild
+729,neonate,liveborn infant
+729,mother's boy,son
+729,term infant,liveborn infant
+729,foundling,child
+729,stillborn infant,child
+729,son,male offspring
+729,male offspring,child
+729,female offspring,child
+729,test-tube baby,liveborn infant
+729,postmature infant,liveborn infant
+729,mother's daughter,daughter
+729,premature baby,liveborn infant
+729,stepson,stepchild
+729,stepchild,child
+729,cherub,child
+729,nursling,child
+729,low-birth-weight baby,liveborn infant
+729,child,baby
+729,papoose,baby
+729,army brat,child
+729,Esau,child
+729,war baby,child
+730,noon,hour
+730,prime,canonical hour
+730,sext,canonical hour
+730,zero hour,hour
+730,prime time,hour
+730,dinnertime,mealtime
+730,late-night hour,hour
+730,early-morning hour,hour
+730,none,canonical hour
+730,clock time,hour
+730,vespers,canonical hour
+730,matins,canonical hour
+730,midnight,hour
+730,breakfast time,mealtime
+730,compline,canonical hour
+730,mealtime,hour
+730,dawn,hour
+730,rush hour,hour
+730,small hours,hour
+730,lights-out,bedtime
+730,nones,canonical hour
+730,sunset,hour
+730,lunchtime,mealtime
+730,terce,canonical hour
+730,happy hour,hour
+730,spacecraft clock time,hour
+730,twilight,hour
+730,night,hour
+730,closing time,hour
+730,bedtime,hour
+730,canonical hour,hour
+731,spathe,involucre
+731,lemma,glume
+731,bracteole,bract
+731,pod,husk
+731,epicalyx,bract
+731,nutshell,shell
+731,pea pod,pod
+731,cornhusk,husk
+731,hull,shell
+731,bract,involucre
+732,maneuver,flight maneuver
+732,chandelle,flight maneuver
+732,outside loop,flight maneuver
+732,inside loop,flight maneuver
+732,barrel roll,flight maneuver
+732,snap roll,flight maneuver
+732,loop,flight maneuver
+732,vertical bank,flight maneuver
+732,roll,flight maneuver
+732,clinch,maneuver
+732,slip,maneuver
+732,straight-arm,maneuver
+732,bank,maneuver
+733,driver,wood
+733,wood,golf club
+733,iron,golf club
+733,wedge,golf club
+733,putter,golf club
+733,driving iron,iron
+733,mashie niblick,iron
+733,sand wedge,wedge
+733,short iron,iron
+733,mashie,iron
+733,brassie,wood
+733,niblick,iron
+733,spoon,wood
+733,midiron,iron
+733,pitching wedge,wedge
+733,long iron,iron
+733,metal wood,wood
+734,climate change,global warming
+734,global warming,temperature change
+734,heating,temperature change
+734,radiant heating,heating
+734,convection,heating
+734,heat dissipation,cooling
+734,cooling,temperature change
+734,freeze,temperature change
+734,thaw,temperature change
+734,frost,temperature change
+734,boiling,temperature change
+734,advection,temperature change
+734,induction heating,heating
+734,refrigeration,cooling
+734,freeze-drying,freeze
+734,meltdown,overheating
+734,decoction process,boiling
+735,alb,vestment
+735,cassock,vestment
+735,Geneva gown,academic gown
+735,surplice,vestment
+735,pontifical,vestment
+735,pallium,vestment
+735,chasuble,vestment
+735,soutane,cassock
+735,humeral veil,vestment
+735,academic gown,gown
+735,gown,vestment
+736,andante,tempo
+736,largo,tempo
+736,allegro,tempo
+736,adagio,tempo
+736,allegretto,tempo
+736,ground bass,ostinato
+736,cadence,phrase
+736,ostinato,riff
+736,passage,transition
+736,cadenza,passage
+736,intro,passage
+736,recitative,passage
+736,plagal cadence,cadence
+736,riff,ligature
+736,transition,phrase
+736,passage,phrase
+736,arioso,passage
+736,impromptu,passage
+737,back circle,acrobatic stunt
+737,flip-flop,cartwheel
+737,somersault,acrobatic stunt
+737,walkover,acrobatic stunt
+737,tumble,acrobatic stunt
+737,handspring,acrobatic stunt
+737,split,acrobatic stunt
+737,backbend,acrobatic stunt
+737,headstand,acrobatic stunt
+738,interplay,relation
+738,interaction,relation
+738,reciprocity,relation
+738,interchange,relation
+738,contact,relation
+738,placement,relation
+738,eye contact,contact
+738,dealings,relation
+738,brush,contact
+738,cross-fertilization,interplay
+739,agglomeration,collection
+739,bottle collection,collection
+739,garbage collection,collection
+739,aerophilately,philately
+739,conchology,collection
+739,centralization,collection
+739,gather,collection
+739,tax collection,collection
+739,pickup,collection
+739,compilation,collection
+739,numismatics,collection
+739,haying,harvest
+739,collation,compilation
+739,harvest,collection
+740,Midas touch,magical ability
+740,magical ability,capacity
+740,capacity,ability
+740,totipotency,capacity
+740,penetration,ability
+740,adaptability,capacity
+740,immunocompetence,capacity
+740,firepower,military capability
+740,contractility,physical ability
+740,bunker mentality,defensiveness
+740,defensibility,capability
+740,proficiency,competence
+740,military capability,capability
+740,lung-power,physical ability
+740,interoperability,capability
+740,perceptiveness,sensitivity
+740,flexibility,adaptability
+740,associability,capability
+740,form,ability
+740,linguistic competence,competence
+740,pliability,flexibility
+740,competence,capability
+740,physical ability,ability
+740,wiggle room,flexibility
+740,envelope,form
+740,lycanthropy,magical ability
+740,operating capability,capability
+740,sensitivity,perceptiveness
+740,defensiveness,capability
+740,sea power,military capability
+740,ability,capability
+740,antenna,sensitivity
+740,executability,capability
+740,fitness,physical ability
+740,astringency,physical ability
+740,voice,physical ability
+740,overkill,firepower
+741,ghatti,gum
+741,conima,gum
+741,tragacanth,gum
+741,gum butea,gum
+741,algin,gum
+741,exudate,gum
+741,sangapenum,gum
+741,gutta-percha,gum
+741,gum,exudate
+741,cherry-tree gum,gum
+741,mucilage,gum
+741,eucalyptus gum,gum
+741,kino,gum
+741,dragon's blood,gum
+741,frankincense,gum
+741,galbanum,gum
+741,opopanax,gum
+741,ammoniac,gum
+741,carrageenin,gum
+741,hard rubber,rubber
+741,Para rubber,rubber
+741,foam rubber,rubber
+741,guar gum,gum
+741,gum arabic,gum
+741,chicle,gum
+741,rubber,latex
+741,latex,exudate
+741,sweet gum,gum
+741,Senegal gum,gum
+741,agar,gum
+741,lacquer,gum
+741,mesquite gum,gum
+741,balata,gum
+741,euphorbium,gum
+741,crepe rubber,rubber
+741,sterculia gum,gum
+742,corpus luteum,ovary
+742,adrenal medulla,adrenal gland
+742,ovary,gonad
+742,testis,gonad
+742,adrenal gland,endocrine gland
+742,pineal gland,endocrine gland
+742,thymus gland,endocrine gland
+742,parathyroid gland,endocrine gland
+742,thyroid gland,endocrine gland
+742,anterior pituitary,pituitary
+742,posterior pituitary,pituitary
+742,islands of Langerhans,pancreas
+742,adrenal cortex,adrenal gland
+742,pars intermedia,pituitary
+742,pars distilis,pituitary
+742,prostate gland,gonad
+742,ovotestis,gonad
+742,undescended testis,testis
+742,cobblers,testis
+743,X-raying,form of imaging
+743,computerized tomography,form of imaging
+743,A-scan ultrasonography,form of sonography
+743,B-scan ultrasonography,form of sonography
+743,sonography,form of imaging
+743,radioscopy,form of imaging
+743,functional magnetic resonance imaging,form of imaging
+743,fluoroscopy,form of imaging
+743,blood-oxygenation level dependent functional magnetic resonance imaging,form of functional magnetic resonance imaging
+743,positron emission tomography,form of imaging
+743,magnetic resonance imaging,form of imaging.
+744,moocher,beggar
+744,beggarwoman,beggar
+744,schnorrer,beggar
+744,pauper,beggar
+744,panhandler,beggar
+744,Lazarus,beggar
+744,sannyasi,beggar
+744,beggarman,beggar
+744,derelict,beggar
+744,starveling,beggar
+745,question,interrogation
+745,interrogation,questioning
+745,cross-examination,interrogation
+745,direct examination,interrogation
+745,redirect examination,interrogation
+745,interview,questioning
+745,job interview,interview
+745,telephone interview,interview
+745,debriefing,interview
+745,deposition,questioning
+745,challenge,questioning
+745,catechism,questioning
+745,inquisition,interrogation
+745,third degree,interrogation.
+746,dissection,breakdown
+746,analysis,reductionism
+746,elimination,reductionism
+746,resolution,reductionism
+746,trend analysis,systems analysis
+746,systems analysis,analysis
+746,cost-benefit analysis,analysis
+746,breakdown,reductionism
+746,factorization,reductionism
+746,diagonalization,reductionism
+747,parathion,organophosphate
+747,rotenone,insecticide
+747,Paris green,arsenical
+747,phosphine,insecticide
+747,organophosphate,insecticide
+747,Malathion,organophosphate
+747,Kwell,pediculicide
+747,acaricide,insecticide
+747,dichlorodiphenyltrichloroethane,insecticide
+747,pyrethrum,insecticide
+747,lindane,insecticide
+747,pesticide,insecticide
+747,lead arsenate,arsenical
+747,chlorpyrifos,organophosphate
+747,scabicide,pediculicide
+747,spray,pesticide
+747,sheep dip,pesticide
+747,larvacide,pesticide
+748,provitamin A,provitamin
+748,benzene formula,aromatic compound
+748,bitumen,coal tar
+748,paraffin,hydrocarbon
+748,ethane,hydrocarbon
+748,indene,aromatic compound
+748,chlorobenzene,aromatic compound
+748,gasoline,hydrocarbon
+748,octane,gasoline
+748,butadiene,hydrocarbon
+748,kerosene,gasoline
+748,limonene,terpene
+748,liquefied petroleum gas,gas oil
+748,gasohol,gasoline
+748,naphtha,gasoline
+748,pyrene,aromatic hydrocarbon
+748,napalm,gasoline
+748,leaded gasoline,gasoline
+748,naphthalene,aromatic hydrocarbon
+748,unleaded gasoline,gasoline
+748,cymene,aromatic hydrocarbon
+748,beta-carotene,provitamin A
+748,aromatic hydrocarbon,hydrocarbon
+748,hydrocarbon,organic compound
+748,gas oil,hydrocarbon
+748,chloroprene,hydrocarbon
+748,benzene,aromatic hydrocarbon
+748,coal tar,organic compound
+748,dioxin,aromatic hydrocarbon
+748,terpene,organic compound
+749,total eclipse,lunar eclipse
+749,annular eclipse,solar eclipse
+749,partial eclipse,lunar eclipse
+749,solar eclipse,eclipse
+749,lunar eclipse,eclipse
+749,resolution,remission
+749,defervescence,remission
+749,remission,resolution
+749,suspension,interruption
+749,interruption,punctuation
+749,punctuation,interruption
+749,dislocation,interruption
+749,eclipse,interruption
+750,beastliness,nastiness
+750,hatefulness,offensiveness
+750,harshness,unpleasantness
+750,blatancy,offensiveness
+750,frightfulness,awfulness
+750,gruffness,harshness
+750,loathsomeness,nastiness
+750,awfulness,unpleasantness
+750,ghastliness,frightfulness
+750,nastiness,offensiveness
+750,offensiveness,unpleasantness
+751,slander,defamation
+751,aspersion,defamation
+751,smear,defamation
+751,denigration,defamation
+751,libel,defamation
+751,sour grapes,defamation
+751,detraction,defamation
+751,disparagement,defamation
+751,name calling,defamation
+751,character assassination,defamation
+751,ethnic slur,defamation
+751,condescension,defamation
+751,smear word,name calling
+751,cold water,denigration
+751,name,defamation
+752,pretender,claimant
+752,petitioner,submitter
+752,bidder,fundraiser
+752,job candidate,applicant
+752,aspirant,job candidate
+752,solicitor,petitioner
+752,postulant,applicant
+752,material,possible
+752,besieger,bidder
+752,probable,possible
+752,claimant,petitioner
+752,fundraiser,solicitor
+753,shaving foam,foam
+753,soap bubble,bubble
+753,lather,foam
+753,air bubble,bubble
+753,spume,foam
+753,foam,bubble
+753,shaving cream,shaving foam
+753,white water,foam
+753,soapsuds,foam
+754,tailor,garmentmaker
+754,dressmaker,garmentmaker
+754,embroiderer,needleworker
+754,knitter,needleworker
+754,embroideress,embroiderer
+754,stitcher,sewer
+754,fitter,garmentmaker
+754,sewing-machine operator,stitcher
+754,sewer,needleworker
+754,tucker,sewer
+754,cloakmaker,garmentmaker
+754,baster,sewer
+754,Ross,tailor
+754,edger,sewer
+754,outfitter,garmentmaker
+755,compass saw,saw
+755,keyhole saw,saw
+755,ripsaw,saw
+755,two-handed saw,saw
+755,handsaw,saw
+755,hacksaw,saw
+755,bill,saw
+755,folding saw,saw
+755,coping saw,saw
+755,pitsaw,saw
+755,pruning saw,saw
+755,crown saw,saw
+755,backsaw,saw
+755,crosscut saw,saw
+755,bucksaw,saw
+755,saw,tool
+756,doormat,floor cover
+756,scatter rug,rug
+756,red carpet,carpet
+756,stair-carpet,carpet
+756,rug,floor cover
+756,mat,floor cover
+756,hearthrug,rug
+756,runner,carpet
+756,prayer rug,rug
+756,drugget,floor cover
+756,Wilton,carpet
+756,flying carpet,rug
+756,numdah,rug
+756,rya,rug
+756,broadloom,carpet
+756,parquetry,floor cover
+756,Kurdistan,rug
+756,Brussels carpet,carpet
+757,spore,microspore
+757,spore,resting spore
+757,spore,fern seed
+757,spore,carpospore
+757,spore,zygospore
+757,spore,aeciospore
+757,spore,basidiospore
+757,spore,conidium
+757,spore,endospore
+757,spore,pollen
+757,spore,chlamydospore
+757,spore,oospore
+757,spore,tetraspore
+757,agamete,spore
+757,pollinium,spore
+757,spore,megaspore
+757,spore,ascospore
+757,spore,teliospore
+757,ragweed pollen,pollen
+758,automysophobia,specific phobia
+758,musophobia,specific phobia
+758,androphobia,specific phobia
+758,claustrophobia,specific phobia
+758,school phobia,specific phobia
+758,arachnophobia,specific phobia
+758,acrophobia,specific phobia
+758,cyberphobia,specific phobia
+758,algophobia,specific phobia
+758,taphephobia,specific phobia
+758,cynophobia,specific phobia
+758,ailurophobia,specific phobia
+758,xenophobia,specific phobia
+758,aquaphobia,specific phobia
+758,thanatophobia,specific phobia
+758,photophobia,specific phobia
+758,gynophobia,specific phobia
+758,entomophobia,specific phobia
+758,acarophobia,specific phobia
+758,cryophobia,specific phobia
+758,zoophobia,specific phobia
+758,pyrophobia,specific phobia
+758,astraphobia,specific phobia
+758,phobia,fear
+758,satanophobia,specific phobia
+758,hypnophobia,specific phobia
+758,mysophobia,specific phobia
+758,agoraphobia,specific phobia
+758,nyctophobia,specific phobia
+758,traumatophobia,specific phobia
+758,hydrophobia,specific phobia
+758,lepidophobia,specific phobia
+758,phobophobia,specific phobia
+758,phonophobia,specific phobia
+758,neophobia,specific phobia
+758,social phobia,specific phobia
+758,triskaidekaphobia,specific phobia
+759,Santa Fe Trail,trail
+759,Chisholm Trail,cattle trail
+759,piste,ski run
+759,mountain trail,trail
+759,horse-trail,trail
+759,ski run,trail
+759,portage,trail
+759,Iditarod Trail,trail
+759,Indian trail,trail
+759,deer trail,trail
+759,track,trail
+759,cattle trail,trail
+760,eicosapentaenoic acid,omega-3 fatty acid
+760,docosahexaenoic acid,omega-3 fatty acid
+760,alpha-linolenic acid,omega-3 fatty acid
+760,linolenic acid,omega-3 fatty acid
+760,linoleic acid,omega-6 fatty acid
+760,elaidic acid,monounsaturated fatty acid
+760,eleostearic acid,polyunsaturated fatty acid
+760,oleic acid,monounsaturated fatty acid
+760,ricinoleic acid,monounsaturated fatty acid
+760,unsaturated fatty acid,fatty acid
+760,omega-6 fatty acid,fatty acid
+760,polyunsaturated fatty acid,unsaturated fatty acid
+760,monounsaturated fatty acid,unsaturated fatty acid
+760,omega-3 fatty acid,unsaturated fatty acid
