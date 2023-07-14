@@ -78,7 +78,7 @@ def main_lightning(args):
     dataset = PairPredictionDataModule(tokenizer, args)
     model = GPTSequenceClassifiationModule(args)
     wandb_logger = WandbLogger(project=args.project_name) if args.logger == 'wandb' else None
-    checkpoint_callback = ModelCheckpoint(monitor="val_loss", dirpath=args.run_dir, filename=args.model_name)
+    checkpoint_callback = ModelCheckpoint(monitor=None, dirpath=args.run_dir, filename=args.model_name)
 
     trainer = pl.Trainer(
         fast_dev_run=args.dev,
