@@ -1,0 +1,5 @@
+header,count of roots&count of no root groups&avg number of parent&avg num of nodes with multiple parents&% nodes with multiple parents
+results/gpt-3/wordnet/_mv,2.25&0.02&1.0&0.02&0.15
+results/gpt-3/wordnet/_mb,1.21&0.0&1.0&0.0&0.0
+results/gpt-3/ccs/_mv,2.87&0.0&1.01&0.33&0.78
+results/gpt-3/ccs/_mb,1.2&0.0&1.0&0.0&0.0
