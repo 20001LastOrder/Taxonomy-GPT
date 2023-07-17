@@ -153,13 +153,20 @@ def violation_val(res):
     return df_viol
 
 def avg_violation_val(dict_res):
-    res={'header':'count of roots'+"&"+'count of no root groups'+"&"+'avg number of parent'+'&'+'avg num of nodes with multiple parents'+'&'+'% nodes with multiple parents'}
+    res={'header':'count of roots'+"&"+'count of no root groups'+"&"+'avg number of parent'+'&'+'% nodes with multiple parents'+'&'}
     for key, df in dict_res.items():
         avg_num_root=round(np.mean(df.num_root),2)
-        avg_no_root= round(np.mean(df.no_root),2)
+        avg_no_root= round(np.mean(df.no_root)*100,2)
         avg_parent=round(np.mean(df.avg_parent),2)
-        avg_count_mu_p=round(np.mean(df.count_mult_parent),2)
         avg_per_mul_parent=round(np.mean(df.perc_mult_parent)*100,2)
-        res[key]=str(avg_num_root)+"&"+str(avg_no_root)+"&"+str(avg_parent)+'&'+str(avg_count_mu_p)+'&'+str(avg_per_mul_parent)
+        res[key]=str(avg_num_root)+"&"+str(avg_no_root)+"&"+str(avg_parent)+'&'+str(avg_per_mul_parent)+'&'
 
     return res
+
+def avg_violation_ib(df):
+    avg_num_root=round(np.mean(df.num_root),2)
+    avg_no_root= round(np.mean(df.no_root)*100,2)
+    avg_parent=round(np.mean(df.avg_parent),2)
+    avg_per_mul_parent=round(np.mean(df.perc_mult_parent)*100,2)
+
+    return avg_num_root,avg_no_root,avg_parent,avg_per_mul_parent
