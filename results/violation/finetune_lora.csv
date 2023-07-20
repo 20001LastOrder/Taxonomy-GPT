@@ -1,0 +1,9 @@
+header,count of roots&count of no root groups&avg number of parent&% nodes with multiple parents&
+results/ccs/finetune.csv_mx,1.0&0.0&1.0&0.0&
+results/ccs/finetune.csv_ml,0.57&64.29&3.3&59.81&
+results/ccs/lora.csv_mx,1.0&0.0&1.0&0.0&
+results/ccs/lora.csv_ml,1.36&28.57&2.6&65.13&
+results/wordnet/finetune.csv_mx,1.0&0.0&1.0&0.0&
+results/wordnet/finetune.csv_ml,1.48&16.51&1.47&31.28&
+results/wordnet/lora.csv_mx,1.0&0.0&1.0&0.0&
+results/wordnet/lora.csv_ml,1.06&43.36&2.56&66.32&
