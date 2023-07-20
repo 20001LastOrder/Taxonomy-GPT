@@ -133,17 +133,16 @@ def get_gpt_binary_model(hparams):
 
     if type(model) == RobertaForSequenceClassification:
         num_layers = len(model.roberta.encoder.layer)
-        for i in range(hparams.learnable_layers):
+        learnable_layers = hparams.learnable_layers if hparams.learnable_layers != -1 else num_layers
+        for i in range(learnable_layers):
             print('Changing layer ', num_layers - 1 - i)
             layer = model.roberta.encoder.layer[num_layers - 1 - i]
-            for param in layer.intermediate.parameters():
-                param.requires_grad = True
-            
-            for param in layer.output.parameters():
+            for param in layer.parameters():
                 param.requires_grad = True
     else:
         num_layers = len(model.transformer.h)
-        for i in range(hparams.learnable_layers):
+        learnable_layers = hparams.learnable_layers if hparams.learnable_layers != -1 else num_layers
+        for i in range(learnable_layers):
             print('Changing layer ', num_layers - 1 - i)
             for param in model.transformer.h[num_layers - 1 - i].mlp.parameters():
                 param.requires_grad = True
