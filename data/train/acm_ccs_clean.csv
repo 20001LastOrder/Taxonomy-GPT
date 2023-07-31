@@ -1,4 +1,4 @@
-Unnamed: 0,parent_name,child_name,group,type
+Unnamed: 0,parent,child,group,type
 0,Discrete mathematics,Combinatorics,10002950_1,val
 1,Combinatorics,Combinatoric problems,10002950_1,val
 2,Combinatorics,Permutations and combinations,10002950_1,val
@@ -84,7 +84,7 @@ Unnamed: 0,parent_name,child_name,group,type
 82,Numerical analysis,Computations in finite fields,10002950_4,train
 83,Numerical analysis,Computations on matrices,10002950_4,train
 84,Numerical analysis,Computations on polynomials,10002950_4,train
-85,Computations on polynomials,Gr枚bner bases and other special bases,10002950_4,train
+85,Computations on polynomials,Gr???bner bases and other special bases,10002950_4,train
 86,Numerical analysis,Number-theoretic computations,10002950_4,train
 87,Numerical analysis,Interpolation,10002950_4,train
 88,Numerical analysis,Numerical differentiation,10002950_4,train

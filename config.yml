@@ -1,4 +1,4 @@
-dataset:  ./data/acm_ccs_clean.csv # ./data/bansal_wordnet_true_pairs.csv
+dataset:  ./data/train/acm_ccs_clean.csv # ./data/bansal_wordnet_true_pairs.csv
 prompt_learning: False
 learnable_layers: 0
 check_val_every_n_epoch: 1
